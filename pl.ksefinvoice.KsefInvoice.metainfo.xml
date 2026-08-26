@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>pl.ksefinvoice.KsefInvoice</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>LicenseRef-proprietary=https://github.com/JDyszczynski/pl.ksefinvoice.app/blob/main/LICENSE</project_license>
+  <name>KsefInvoice</name>
+  <summary>Faktury KSeF Polska</summary>
+  <developer_name>Jarosław Dyszczyński</developer_name>
+  <description>
+    <p><em>Note: This application is currently only available in Polish.</em></p>
+    <p>
+      KsefInvoice to nowoczesne fakturowanie z pełną integracją KSeF — za darmo, bez reklam na zawsze!
+      Jest to w pełni darmowa, bezpieczna aplikacja desktopowa do zarządzania fakturami, kontrahentami i wysyłką do Krajowego Systemu e-Faktur (KSeF). 
+      Bez abonamentu, bez reklam i ukrytych opłat. Twoje dane pozostają lokalnie na Twoim komputerze.
+    </p>
+    <p>Główne moduły i rozszerzone funkcje aplikacji:</p>
+    <ul>
+      <li><em>Integracja z KSeF i Monitoring:</em> Pełna obsługa Krajowego Systemu e-Faktur. Wysyłaj faktury sprzedaży, monitoruj nowe dokumenty (badge z liczbą oczekujących faktur) i automatycznie pobieraj faktury zakupu z wyborem zakresu dat lub kontynuacją od ostatniej synchronizacji. Obsługa autoryzacji tokenem/podpisem, masowa wysyłka oraz pobieranie UPO.</li>
+      <li><em>Łatwy start i migracja sprzedaży:</em> Dla nowej firmy dostępny jest dedykowany import sprzedaży z KSeF (migracja historycznych dokumentów, także korekt). Rozwiązanie przyspiesza pierwsze uruchomienie aplikacji i pozwala szybko rozpocząć pracę bez ręcznego przepisywania danych.</li>
+      <li><em>Stany Magazynowe:</em> Zarządzaj kartoteką towarów i śledź ruchy magazynowe w czasie rzeczywistym. Stany aktualizują się automatycznie po zapisie faktury sprzedaży i zakupu. Rozróżnienie pozycji towar/usługa, historia ruchów, korekty stanów oraz opcjonalne zapisywanie nowych produktów w katalogu podczas wystawiania dokumentów.</li>
+      <li><em>Aplikacja Podatnika (QR):</em> Zgodne z wytycznymi MF generowanie wizualnych kodów QR dla weryfikacji dokumentów offline i podgląd struktury XML.</li>
+      <li><em>Baza Kontrahentów:</em> Zaawansowana integracja z GUS (BIR1): automatyczne pobieranie danych po NIP, mapowanie jednostek lokalnych (REGON14), wybór oddziału z listy oraz aktualizacja karty kontrahenta (nazwa, adres, kod, telefon/e-mail jeśli dostępne). Dodatkowo weryfikacja kontrahentów przez VIES (VAT EU) i Białą Listę Podatników VAT.</li>
+      <li><em>Fakturowanie i Waluty:</em> Kompletna obsługa dokumentów (Faktury VAT, Korekty, Marża, Ryczałt) w różnych walutach, <em>wzbogacona o automatyczne dociąganie codziennych kursów z Tabeli A (NBP)</em> i tłumaczenie faktur na j. angielski oraz niemiecki.</li>
+      <li><em>JPK i Rejestry:</em> Inteligentne generowanie plików, JPK_V7M, plików JPK_FA (wsparcie tagów dokumentów m.in. procedur GTU_12/13/odwrotnego obciążenia), oraz uwzględnianie przewalutowań w ewidencji VAT.</li>
+      <li><em>Ryczałt i JPK_EWP:</em> Obsługa ewidencji przychodów ryczałtowych oraz generowanie plików JPK_EWP zgodnie z obowiązującymi przepisami.</li>
+      <li><em>Rozwiązania Księgowe (Kompensaty):</em> Monitoruj należności i zobowiązania, zarządzaj terminami płatności i korzystaj ze zbiorczych wpłat (kompensat obustronnych na jednym kontrahencie). W module danych do przelewu możesz dodatkowo zweryfikować numer rachunku na Białej Liście VAT na podstawie NIP i numeru konta.</li>
+      <li><em>Nowe funkcje ewidencyjne i podmiotowe:</em> Lista dokumentów wykluczonych z ewidencji z raportowaniem, obsługa Podmiotu 3 oraz wsparcie ról JST i GV (Grupa VAT).</li>
+      <li><em>Numeracja sprzedaży:</em> Możliwość ustawienia własnego pierwszego numeru faktury (numer startowy) dla nowego okresu numeracyjnego, oraz możliwość zmian numeracji w trakcie okresu.</li>
+      <li><em>Obsługa wielu Podmiotów:</em> Zarządzaj wieloma firmami z poziomu jednej aplikacji. Każda firma ma własną bazę danych, konfigurację i ustawienia, a przełączanie między nimi jest szybkie i intuicyjne.</li>
+      <li><em>Pobieraj faktury Sprzedaży z KSeF:</em> Pobieraj i synchronizuj swoje dokumenty sprzedaży z KSeF. Dzięki temu masz pełną kontrolę nad dokumentami sprzedaży, nawet jeśli nie były one wystawiane bezpośrednio przez Ciebie.</li>
+      <li><em>Ergonomia pracy:</em> Natywne wsparcie ciemnego motywu (Dark Mode) oraz błyskawiczne podglądy statusu opłacenia.</li>
+      <li><em>Hurtowe operacje na fakturach:</em> Wybieraj wiele dokumentów i wykonuj zbiorcze operacje, takie jak wysyłka do KSeF, pobieranie UPO, generowaniu plikóœ xml i pdf.</li>
+    </ul>
+    <p>
+      Ta wersja jest darmowa i w pełni funkcjonalna, bez reklam i ukrytych opłat.
+    </p>
+  </description>
+  <launchable type="desktop-id">pl.ksefinvoice.KsefInvoice.desktop</launchable>
+  <categories>
+    <category>Office</category>
+    <category>Finance</category>
+  </categories>
+  <branding>
+    <color type="primary" scheme_preference="light">#e01b24</color>
+    <color type="primary" scheme_preference="dark">#c01c28</color>
+  </branding>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://ksefinvoice.pl/img/dashboard.png</image>
+      <caption>Główny ekran aplikacji - Dashboard</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://ksefinvoice.pl/img/ksef_list.png</image>
+      <caption>Lista faktur KSeF - Integracja z Ministerstwem Finansów</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://ksefinvoice.pl/img/ksef_list_en.png</image>
+      <caption>Lista faktur KSeF - Podgląd w języku angielskim</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://ksefinvoice.pl/img/invoice_editor.png</image>
+      <caption>Edytor faktury - Wystawianie dokumentów w wielu walutach</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://ksefinvoice.pl/img/ksef_monitoring_auto_sync.png</image>
+      <caption>Monitoring KSeF i automatyczne pobieranie faktur zakupu</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://ksefinvoice.pl/img/magazyn_stany.png</image>
+      <caption>Stany Magazynowe - Kartoteka towarów z aktualnymi stanami</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://ksefinvoice.pl/img/magazyn_ruchy.png</image>
+      <caption>Stany Magazynowe - Historia ruchów magazynowych</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://ksefinvoice.pl/img/towar.png</image>
+      <caption>Kartoteka towarów i usług</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://ksefinvoice.pl/img/rozrachunki.png</image>
+      <caption>Moduł Rozrachunków - Kontrola płatności</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://ksefinvoice.pl/img/rozliczenia_zbiorcze.png</image>
+      <caption>Rozliczenia zbiorcze - Kompensaty i bilans kontrahenta</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://ksefinvoice.pl/img/jpk_v7.png</image>
+      <caption>Generator plików JPK_V7 i Rejestry VAT</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://ksefinvoice.pl/img/kontrahent_edit.png</image>
+      <caption>Edycja kontrahenta - Pobieranie danych z Rejestrów</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://ksefinvoice.pl/img/konfiguracja.png</image>
+      <caption>Konfiguracja firmy i parametrów systemu</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://ksefinvoice.pl/img/login_page.png</image>
+      <caption>Ekran logowania aplikacji</caption>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://ksefinvoice.pl/</url>
+  <url type="bugtracker">https://github.com/JDyszczynski/pl.ksefinvoice.app/issues</url>
+  <url type="vcs-browser">https://github.com/JDyszczynski/pl.ksefinvoice.app</url>
+  <url type="contribute">https://github.com/JDyszczynski/pl.ksefinvoice.app</url>
+  <url type="donation">https://buycoffee.to/jarekd</url>
+  <content_rating type="oars-1.1" />
+  <releases>
+    <release version="1.0.46" date="2026-08-26">
+      <description>
+        <ul>
+          <li>Podgląd i PDF dokumentów liczonych od brutto (kolumna netto): Dodano opcję <code>Konfiguracja -> Inne -> Opcje wydruków -> Pokaż kolumnę wartość netto dla dokumentów liczonych od cen brutto</code>. Po jej włączeniu tabela pozycji w podglądzie i PDF pokazuje dodatkową kolumnę <code>Wartość netto</code> dla dokumentów wystawionych od kwot brutto; gdy XML nie zawiera wartości netto pozycji, jest ona wyliczana z kwoty brutto i stawki VAT. Opcja jest domyślnie wyłączona.</li>
+          <li>Faktury (status zapłaty w podglądzie, PDF i edycji): Naprawiono błędne wyświetlanie napisu „DO ZAPŁATY” przy głównej kwocie dokumentu, mimo obecności w XML znacznika <code>Zaplacono=1</code>. Podgląd i PDF pokazują teraz „Zapłacono”, a przy ponownej edycji istniejącej faktury poprawnie przywracane jest również zaznaczenie checkboxa „Oznacz fakturę jako w pełni zapłaconą”, także dla płatności przelewem.</li>
+          <li>KSeF XML (ilości pozycji z miejscami po przecinku): Naprawiono zaokrąglanie ilości pozycji podczas generowania XML FA(3). Ilości mogą teraz zachować do czterech miejsc po przecinku, np. <code>1,2345</code> jest zapisywane w XML jako <code>1.2345</code>; dotyczy to również ilości w pozycjach zaliczkowych.</li>
+          <li>KSeF XML (korekty sprzedaży, sekcja Rozliczenie / DoRozliczenia): Ujednolicono źródło kwoty <code>DoRozliczenia</code> z nagłówkiem dokumentu. Dla korekt sprzedaży (<code>KOR</code>) wartość w <code>Rozliczenie/DoRozliczenia</code> jest teraz wyliczana z tej samej podstawy co <code>P_15</code> (z uwzględnieniem już rozliczonej części dokumentu), zamiast z rekonstrukcji stanu <code>PO</code>.</li>
+          <li>KSeF XML (korekty sprzedaży, znak kwoty DoRozliczenia): Uszczelniono zapis kwoty w <code>Rozliczenie/DoRozliczenia</code> tak, aby była zawsze nieujemna. Dla korekt z ujemnym <code>P_15</code> do XML trafia dodatnia wartość bezwzględna (np. <code>P_15=-26.97</code> -> <code>DoRozliczenia=26.97</code>).</li>
+          <li>Podgląd korekt KSeF (pozycje PRZED/PO, nierówne grupy): Zmieniono render pozycji korekty dla przypadków, gdzie liczba wierszy <code>StanPrzed=1</code> jest inna niż liczba wierszy <code>PO</code>. W takim układzie podgląd nie paruje już pozycji 1:1, tylko prezentuje je grupowo: najpierw wszystkie wiersze <code>PRZED</code>, następnie wszystkie wiersze <code>PO</code>.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.45" date="2026-07-30">
+      <description>
+        <ul>
+          <li>Podgląd i wydruk faktur (sekcja Rozliczenie: Obciążenia/Odliczenia): Dodano opcję w `Konfiguracja -> Inne -> Opcje wydruku` pozwalającą pokazywać tabelę `Rozliczenie` z pozycjami `Obciążenia`/`Odliczenia`, ich sumami oraz kwotą `Do zapłaty` dla dokumentów pobranych z KSeF. Nad tabelą wyświetlany jest nagłówek `Rozliczenie`. Opcja jest domyślnie włączona.</li>
+          <li>Szablony faktur sprzedaży (zamówienie/umowa, zapis i wczytywanie): Naprawiono błąd, przez który po wczytaniu szablonu mogły samoczynnie zaznaczać się pola `Zamówienie` i `Umowa` oraz ustawiać daty, mimo że na fakturze wzorcowej checkboxy były odznaczone. Zapis szablonu utrwala teraz numer i datę zamówienia/umowy tylko wtedy, gdy odpowiadający checkbox jest włączony, a wczytywanie respektuje jawne flagi `has_order` i `has_contract` (z zachowaniem kompatybilności dla starszych szablonów).</li>
+          <li>Logowanie / start aplikacji (wydajność dla większych baz): Zoptymalizowano czas przejścia od kliknięcia `Zaloguj` do wyświetlenia głównego okna. Ciężkie moduły (m.in. widoki faktur) są teraz inicjalizowane leniwie, dopiero przy pierwszym wejściu w daną zakładkę, a nie wszystkie naraz podczas logowania.</li>
+          <li>Faktury(imienne):Naprawiono błąd skłądni xml dla podmiotu 2 w wypadku wystawiania faktury dla osoby nie posiadającej numeru nip.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.44" date="2026-07-28">
+      <description>
+        <ul>
+          <li>Rozrachunki (menu kontekstowe i kolumna Akcje, Dane do przelewu): Naprawiono regres, przez który otwieranie okna `Dane do przelewu` mogło kończyć się błędem (`NameError`) i brakiem reakcji akcji z PPM/kolumny `Akcje`. Przywrócono poprawne otwieranie dialogu dla dokumentów rozrachunkowych.</li>
+          <li>Rozrachunki / Podgląd dokumentu (stabilność DB, QueuePool): Naprawiono wycieki sesji SQLAlchemy powodujące błąd `QueuePool limit size 5 overflow 10 reached, connection timed out` przy wielokrotnym otwieraniu okien z rozrachunków (m.in. `Podgląd dokumentu`, `Dane do przelewu`). Dialogi domykają teraz sesję DB w ścieżkach `done()` oraz `closeEvent()`, co eliminuje kumulację połączeń.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.43" date="2026-07-29">
+      <description>
+        <ul>
+          <li>Faktury (nowe typy dokumentów: `ZAL`, `ROZ`, `KOR_ZAL`, `KOR_ROZ`): Dodano pełną obsługę nowych typów dokumentów zaliczkowych i rozliczeniowych w całym workflow aplikacji: tworzenie/edycja, import/eksport KSeF FA(3), prezentacja na liście dokumentów, podgląd oraz rozrachunki. Ujednolicono też zasady wyliczeń dla łańcucha zaliczek i rozliczeń (`P_15`, `P_15ZK`, agregaty `P_13_x`/`P_14_x`) oraz powiązań dokumentów korygujących.</li>
+          <li>Faktury (nowa zakładka opisów): Dodano nową zakładkę w formularzu faktury z możliwością dodawania dodatkowych opisów dokumentu i pozycji. Wpisy opisowe są zapisywane wraz z dokumentem i przenoszone do podglądu oraz do XML KSeF jako `DodatkowyOpis` (zarówno wariant pozycyjny z `NrWiersza`, jak i dokumentowy bez powiązania z wierszem).</li>
+          <li>Rozrachunki (odnotowywanie wpłat): Zmieniono format wyświetlania dat przy rejestracji i edycji wpłat z `RRRR-MM-DD` na `DD-MM-RRRR`. Ujednolicono też prezentację dat w powiązanych widokach rozrachunków oraz zachowano poprawne sortowanie kolumn dat po zmianie formatu.</li>
+          <li>Dane podmiotu (JPK / adresy): Dodano brakujące pola `Gmina`, `Powiat` oraz `Województwo` w konfiguracji podmiotu, wraz z możliwością wyboru województwa z listy. Dane te są teraz zapisywane w bazie i wykorzystywane przy generowaniu plików JPK.</li>
+          <li>Deklaracje (JPK_PKPIR): Wdrożono eksport `JPK_PKPIR` zgodny ze schemą Ministerstwa Finansów (`JPK_PKPIR (3)`), z generowaniem nagłówka, danych podmiotu, wierszy księgi i sum kontrolnych. (Funkcja eksperymentalna, bez możliwości określania pozycji kosztowych)</li>
+          <li>Deklaracje (PPE, zaokrąglenie podatku): Ujednolicono zaokrąglanie podatku PPE do pełnych złotych zgodnie z regułą podatkową `50 gr w górę` (ROUND_HALF_UP), zamiast zaokrąglenia bankierskiego.</li>
+          <li>Podgląd faktury (pozycje, dodatkowe opisy): Naprawiono przypadek pojawiania się pustych dodatkowych wierszy opisu pozycji. Wiersz opisu jest teraz renderowany wyłącznie wtedy, gdy faktycznie zawiera treść (`Klucz` i/lub `Wartość`).</li>
+          <li>Faktury (Qt, nowy dokument/edycja dokumentu - pola ilości i ceny w pozycjach): Naprawiono obsługę wklejanych wartości liczbowych zawierających dodatkowe znaki (np. walutę, spacje, symbole) oraz różne separatory dziesiętne (`przecinek`/`kropka`). Formularz pozycji nie „gubi” już przeliczeń ani nie wpada w błędne stany przy wartościach typu `1 234,56 PLN`, `1.234,56` lub `1234.56`; niepoprawny ciąg jest bezpiecznie normalizowany do liczby lub domyślnej wartości `0.0` bez destabilizacji okna.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.42" date="2026-06-25">
+      <description>
+        <ul>
+          <li>Kontrahenci (Qt, lista kontrahentów): Dodano sortowanie po kliknięciu nagłówków kolumn w głównej tabeli kontrahentów oraz trwałe zapamiętywanie ustawień sortowania (kolumna + kierunek rosnąco/malejąco). Po ponownym uruchomieniu aplikacji i po odświeżeniu listy (np. zmianie filtra typu kontrahenta) widok automatycznie przywraca ostatnio użyte sortowanie.</li>
+          <li>Faktury (Qt, dialog wyboru kontrahenta w nowym dokumencie): Wdrożono ręczną zmianę szerokości kolumn (`Nazwa`, `NIP`, `Miasto`) z natychmiastowym i trwałym zapisem ustawień. Dodano logikę kompensacji szerokości (przy poszerzaniu jednej kolumny zwężane są kolejne), aby tabela nie wychodziła poza obszar okna i nie pojawiał się poziomy pasek przewijania. Uzupełniono też automatyczne dopasowanie kolumn do zmiany rozmiaru okna dialogowego z zachowaniem proporcji ostatniego układu użytkownika oraz poprawiono odtwarzanie ustawień po ponownym otwarciu okna i restarcie aplikacji.</li>
+          <li>KSeF (Podmiot 3, odbieranie faktur i role): Dodano obsługę odbierania faktur dla Podmiotu 3 wraz z konfiguracją zachowania zależną od wybranej roli Podmiotu 3.</li>
+          <li>KSeF (import FA(3) z zewnętrznych programów, spójność pozycji z agregatami): Naprawiono rozjazdy między wyliczeniami pozycji a sumami nagłówkowymi (`P_13_x`, `P_15`) dla faktur importowanych z innych systemów. Gdy w wierszu występuje `P_11` i/lub `P_11A`, cena jednostkowa jest teraz odtwarzana z wartości pozycji i ilości (`P_11`/`P_11A` ÷ `P_8B`) zamiast polegać wyłącznie na `P_9A`, które bywa zaokrąglone.</li>
+          <li>Faktury sprzedaży (rabatowanie, konfiguracja): Dodano rabatowanie na dokumentach sprzedaży z możliwością włączenia funkcji w konfiguracji: `Inne`.</li>
+          <li>JPK_V7M (okres rozliczeniowy, data sprzedaży/dostawy vs data wystawienia): Naprawiono kwalifikację dokumentów do miesiąca deklaracji. Dla metody memoriałowej sprzedaż i zakupy są teraz przypisywane do okresu na podstawie `date_sale` (z fallbackiem do `date_issue`), zamiast wyłącznie po `date_issue`. Dzięki temu faktura wystawiona w czerwcu z datą sprzedaży 31 maja trafia do JPK za maj. Dla metody kasowej (`MK`) zachowano dotychczasową regułę rozpoznawania okresu po dacie zapłaty (`paid_date`).</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.41" date="2026-06-07">
+      <description>
+        <ul>
+          <li>KSeF / Korekty FA(3) / Podgląd dokumentu (tabela VAT, `PRZED` / `PO` / `RAZEM`): Ujednolicono prezentację tabeli VAT dla korekt importowanych z KSeF, w tym korekt `TypKorekty=3` („jak ma być”). Podgląd pokazuje teraz osobne sekcje `PRZED` i `PO` budowane z wierszy `FaWiersz`, bez sztucznego wiersza `KOR`, natomiast końcowy wiersz `RAZEM` korzysta z nagłówkowych pól XML `P_13_x` / `P_14_x` / `P_15`. Dzięki temu podsumowanie jest zgodne zarówno z układem pozycji korekty, jak i z wartościami dokumentu zapisanymi w XML.</li>
+          <li>KSeF / Korekty FA(3) / Podgląd dokumentu (uproszczone i zunifikowane tabele stawek podatkowych): Uproszczono i zunifikowano tabele stawek podatkowych dla faktur korygujących. Podgląd używa teraz jednolitego układu sekcji `PRZED` / `PO` oraz końcowego wiersza `RAZEM`, co porządkuje prezentację danych i eliminuje wcześniejsze rozbieżności semantyczne między układem pozycji a podsumowaniem z XML.</li>
+          <li>KSeF / Korekty FA(3) / Pozycje dokumentu (`DodatkowyOpis`): Naprawiono problem z pokazywaniem dodatkowego opisu pozycji dla faktur korygujących. `DodatkowyOpis` jest teraz poprawnie wiązany z odpowiednimi wierszami `PRZED` / `PO` w podglądzie korekty oraz zachowuje zgodność numeracji z eksportowanymi wierszami `FaWiersz` w XML FA(3).</li>
+          <li>KSeF / Podgląd dokumentu / Dokumentowy `DodatkowyOpis` (bez `NrWiersza`): Dodano prezentację wpisów `DodatkowyOpis`, które nie są powiązane z konkretną pozycją `FaWiersz`. Takie opisy są teraz pokazywane w osobnej tabeli pod sekcją płatności i kodów QR, zarówno dla zwykłych faktur, jak i korekt, bez mieszania ich z uwagami ani z opisami przypisanymi do pojedynczych pozycji.</li>
+          <li>KSeF XML / Lokalne niewysłane dokumenty (odświeżanie cache `ksef_xml`): Naprawiono przypadek, w którym eksport XML, podgląd XML i wysyłka do KSeF mogły użyć historycznego snapshotu `ksef_xml` zapisanego wcześniej dla lokalnej, niewysłanej faktury lub korekty. Dla takich dokumentów program regeneruje teraz XML z bieżącej logiki zamiast bezwarunkowo ufać staremu cache, co przywraca zgodność nagłówka (`P_15`, `P_1`, `P_6`, `Adnotacje`) z aktualną wersją generatora.</li>
+          <li>Lista dokumentów / Korekty (kolumny `Netto` / `Brutto`): Naprawiono przypadek, w którym lista dokumentów mogła dla korekty pokazać wartości końcowego stanu `PO` odtworzone z wierszy `FaWiersz`, zamiast kwot nagłówkowych dokumentu. Kolumny `Netto` i `Brutto` korzystają teraz wyłącznie z agregatów nagłówka XML (`P_13_x`, `P_15`) albo z zapisanych `total_net` / `total_gross`, bez fallbacku do rekonstrukcji stanu po korekcie.</li>
+          <li>Lista dokumentów / Lokalne niewysłane korekty (`ksef_xml`): Uszczelniono źródło kwot dla lokalnych niewysłanych korekt. Lista dokumentów nie ufa już historycznemu snapshotowi `ksef_xml` zapisanemu przed poprawkami generatora; dla takich dokumentów odczytuje teraz nagłówek ze świeżo wygenerowanego XML (`P_13_x`, `P_15`), a dopiero awaryjnie spada do zapisanych `total_net` / `total_gross`.</li>
+          <li>Lista dokumentów / Rozliczenie (`R`) / Zerowe korekty: Naprawiono przypadek, w którym zerowa korekta bez wpłat mogła oznaczyć zarówno siebie, jak i fakturę bazową jako `Rozliczona`. Kolumna `R` ignoruje teraz taką korektę przy wyznaczaniu aktywnego salda wątku i pokazuje faktyczne rozliczenie faktury bazowej; sam wiersz korekty sygnalizuje, że nie wpływa ona na rozliczenie.</li>
+          <li>Rozrachunki / Korekty o zerowej kwocie (`P_13_x=0`, `P_15=0`): Naprawiono przypadek, w którym zerowa korekta mogła zaburzać widok rozrachunków. Sama korekta o zerowym bilansie nie tworzy już sztucznego rozrachunku ani statusu `Rozliczona`, ale też nie ukrywa niezapłaconej faktury bazowej w tym samym wątku; jeśli brak wpłat/zwrotów, rozrachunki cofają się do ostatniego realnego salda rodziny dokumentów.</li>
+          <li>Rozrachunki / Sortowanie wartości tekstowych: Naprawiono błąd sortowania listy rozrachunków dla nienumerycznych wartości tekstowych, np. `zatowar`. Widok nie próbuje już wpadać w rekurencyjny fallback `QTableWidgetItem.__lt__`, więc sortowanie nie kończy się `ValueError` ani `RecursionError`.</li>
+          <li>KSeF / Korekty `TypKorekty=3` / Lista dokumentów i rozrachunki (`P_15`, `P_13_x`): Ujednolicono odczyt kwot dla historycznie zaimportowanych korekt, w których zapisane w bazie `total_gross` / `total_net` mogły być niespójne z XML. Lista dokumentów, status `Do zapłaty` / `Do zwrotu`, widok rozrachunków, dialog rozliczenia i dane do przelewu preferują teraz dla korekt wartości nagłówkowe z XML (`P_15` oraz suma `P_13_x`), zamiast opierać się wyłącznie na utrwalonych wartościach bazy.</li>
+          <li>Migrator bazy danych / Korekty KSeF `TypKorekty=3` (migracja v29): Dodano jednorazową migrację uruchamianą automatycznie przy pierwszym starcie nowej wersji programu na starszej bazie. Migracja `v29` wykrywa wyłącznie korekty KSeF z `TypKorekty=3`, w których `invoices.total_gross` nie zgadza się z nagłówkowym `P_15` z XML, i naprawia zapisane sumy dokumentu; jeśli w XML są obecne pola `P_13_x`, aktualizowany jest również `total_net`.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.40" date="2026-06-02">
+      <description>
+        <ul>
+          <li>KSeF / Korekty / Rozrachunki (`P_15`): Ujednolicono kwoty rozrachunków dla korekt importowanych z KSeF. Widok rozrachunków, dialog rozliczenia i dane do przelewu korzystają teraz z zapisanej wartości nagłówkowej dokumentu (`total_gross` z pola `P_15`), zamiast rekonstruować kwotę z wierszy `FaWiersz` (`stan PO`). Dzięki temu korekty „na minus” nie są już prezentowane jak dopłata wynikająca z końcowego stanu pozycji.</li>
+          <li>Lista dokumentów / Korekty KSeF (`P_15`, `P_13_x`, `P_14_x`): Doprecyzowano prezentację korekt na liście dokumentów. Kolumny netto/brutto oraz status `Do zapłaty` / `Do zwrotu` dla korekt są spójne z wartościami nagłówkowymi importu KSeF (`P_15`, agregaty `P_13_x`/`P_14_x`), niezależnie od tego, czy korekta została wystawiona jako różnicowa, czy metodą „jak ma być”.</li>
+          <li>Podgląd korekt KSeF (tabela VAT, `PRZED` / `KOR` / `RAZEM`): Uporządkowano semantykę podsumowania VAT w podglądzie korekt. Wiersze `KOR` korzystają z agregatów XML `P_13_x` / `P_14_x`, a wiersz `RAZEM` pokazuje faktyczne podliczenie `PRZED + KOR`, zamiast samej różnicy lub samego stanu po korekcie.</li>
+          <li>Podgląd pozycji dokumentu (tryb cen netto/brutto): Dodano rozróżnienie dokumentów liczonych od netto i od brutto w tabeli pozycji. Dla dokumentów importowanych/oznaczonych jako `GROSS` nazwy kolumn zmieniają się z `Cena/Wartość netto` na `Cena/Wartość brutto`, a wartości pozycji są pobierane bezpośrednio z danych brutto (`gross_value`, `P_9B`, `P_11A`), bez sztucznego przeliczania od netto.</li>
+          <li>Podgląd pozycji dokumentu (informacja o bazie cen, lokalizacja): Nad tabelą pozycji dodano lokalizowaną informację `Dokument liczony od netto` / `Dokument liczony od brutto`. Nota jest renderowana małą granatową czcionką bezpośrednio na górnej krawędzi tabeli i działa w wersjach językowych podglądu (`PL` / `EN` / `DE`).</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.39" date="2026-05-30">
+      <description>
+        <ul>
+          <li>Podgląd faktury / e-mail (workflow wysyłki na różnych platformach): Uporządkowano sposób otwierania wiadomości e-mail z załączonym PDF. W wersji Flatpak program korzysta teraz z `xdg-desktop-portal Email.ComposeEmail`, aby przekazać temat, treść i załącznik zgodnie z ograniczeniami sandboxa. W zwykłej wersji Linuksa, AppImage oraz na Windows przywrócono klasyczny workflow sprzed eksperymentów portalowych: przygotowanie draftu i otwarcie go przez systemowe skojarzenie klienta pocztowego.</li>
+          <li>Podgląd faktury / e-mail (treść wiadomości i nazewnictwo dokumentu): Ujednolicono generowanie tematu i treści wiadomości z podglądem dokumentu. Dla dokumentów sprzedaży ryczałtowych wiadomość używa teraz nazwy `Faktura` zamiast `Rachunek`, a tekst plain-text otrzymał czytelniejszy układ z separatorami ASCII, wyrównaniem pól oraz sekcją skrótu dokumentu i danych płatności.</li>
+          <li>Numeracja dokumentów (unikatowość numerów): Poprawiono regułę unikatowości numeracji dokumentów. Ten sam numer nie jest już blokowany łącznie dla sprzedaży i zakupów; unikalność numeru jest teraz egzekwowana wyłącznie w obrębie dokumentów sprzedaży, dzięki czemu numer użyty w zakupach nie koliduje z numeracją sprzedaży.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.38" date="2026-05-29">
+      <description>
+        <ul>
+          <li>Szablony faktur sprzedaży (zapis i lista w konfiguracji): Naprawiono odświeżanie listy zapisanych szablonów. Szablon zapisany z poziomu okna wystawiania faktury jest teraz widoczny od razu bez restartu aplikacji, także po przejściu do Konfiguracja → Inne.</li>
+          <li>Szablony faktur sprzedaży (wczytywanie, wyszukiwanie): Dodano wyszukiwanie po nazwie w dialogu wczytywania szablonu, dzięki czemu przy większej liczbie zapisanych pozycji można szybciej odfiltrować właściwy szablon.</li>
+          <li>Podgląd faktury / e-mail (wysyłka dokumentów): Dodano możliwość przygotowania wiadomości e-mail z dokumentem PDF bezpośrednio z poziomu podglądu faktury. Program uzupełnia odbiorcę, temat, treść oraz nazwę załącznika zgodnie z aktualnym językiem podglądu.</li>
+          <li>Deklaracje / Wykluczone z ewidencji (podgląd dokumentu): Dodano możliwość otwierania podglądu dokumentu bezpośrednio z listy wykluczonych z ewidencji, zarówno z paska akcji, jak i z menu pod prawym przyciskiem myszy.</li>
+          <li>KSeF XML (korekty sprzedaży, kwota końcowa `P_15`): Naprawiono eksport korekt do KSeF, aby pole `P_15` było liczone z końcowego stanu dokumentu (`stan po`), a nie z błędnej różnicy prowadzącej do rozjazdów typu `0.01` w XML.</li>
+          <li>KSeF XML (Podmiot 3, dane adresowe): Przywrócono pełny eksport adresu Podmiotu 3. Do XML trafiają teraz nie tylko ulica i kod kraju, ale także komplet linii adresowych zgodnych z danymi widocznymi w PDF/podglądzie.</li>
+          <li>KSeF (import/edycja korekt, znaki i wiersze brutto): Uszczelniono obsługę korekt i importu z KSeF. Formularz nie gubi już znaków ujemnych przy tworzeniu korekty do dokumentu z KSeF, a importer poprawnie przetwarza wiersze zawierające jednocześnie `P_11` i `P_11A`, bez pomijania pozycji i ostrzeżeń parsera.</li>
+          <li>Numeracja faktur (zapis dokumentu, pomijany numer): Naprawiono błąd `cannot access local variable 'PeriodType' where it is not associated with a value`, który mógł przerwać zapis dokumentu i sprawiać wrażenie pominięcia jednego numeru faktury. Usunięto konflikt lokalnego importu z logiką nadawania numeracji okresowej.</li>
+          <li>Logowanie / wybór bazy danych (AppImage, otwieranie lokalizacji): Naprawiono przycisk otwierania katalogu bazy danych w wersji AppImage. Aplikacja uruchamia teraz menedżer plików z bezpiecznym fallbackiem systemowym i oczyszczonym środowiskiem, co eliminuje błędy otwarcia katalogu wynikające z bibliotek bundlowanych przez AppImage.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.37" date="2026-05-27">
+      <description>
+        <ul>
+          <li>GUI / edycja faktury (tryb brutto, przeliczenia pozycji): Uporządkowano zachowanie formularza faktury i przeliczanie pozycji w trybie cen brutto. Zmiany ilości, ceny i stawki VAT odświeżają teraz wartości netto, VAT i brutto spójnie w wierszach oraz w podsumowaniu dokumentu.</li>
+          <li>Faktury mieszane VAT (`ZW` + `23%` / `8%`): Usunięto zbędną blokadę zapisu dla czynnych podatników VAT. Znacznik `Zwolnienie z VAT (P_19)` nie wymusza już ustawienia wszystkich pozycji na `ZW`, dzięki czemu można poprawnie zapisywać faktury mieszane zawierające jednocześnie pozycje zwolnione i opodatkowane.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.36" date="2026-05-25">
+      <description>
+        <ul>
+          <li>JPK_V7 / JPK_FA (stawki 0%, pola deklaracyjne i zgodność z etykietami KSeF): Naprawiono mapowanie wymuszonych etykiet `0 KR`, `0 WDT`, `0 EX`, `NP I`, `NP II` oraz `OO` w raportach JPK. JPK_V7 zachowuje teraz kanoniczną etykietę stawki 0% podczas agregacji i poprawnie rozdziela przypadki krajowe, WDT i eksport do odpowiednich pól (`K_13/P_13`, `K_21/P_21`, `K_22/P_22`), a JPK_FA prawidłowo kieruje `0 WDT` i `0 EX` do `P_13_5` zamiast do krajowego `P_13_6`. Dodatkowo przywrócono emisję szczegółowych pól deklaracji sprzedaży zagranicznej, takich jak `P_11` i `P_12`, zamiast ograniczania się wyłącznie do sum zbiorczych.</li>
+          <li>Dialog O mnie / Rejestr zmian (kontakt, strona, podgląd zmian): Zaktualizowano dane kontaktowe w dialogu `O mnie` — adres e-mail zmieniono na `info@ksefinvoice.pl`, dodano link do strony `https://ksefinvoice.pl` oraz przycisk `Rejestr zmian`. Nowe okno Rejestru zmian pobiera `changelog.md` bezpośrednio ze strony projektu, ma awaryjny fallback do lokalnego `CHANGELOG.md`, pokazuje wyraźną informację o dostępności nowszej wersji aplikacji i skraca widok do wersji istotnych względem aktualnie zainstalowanego wydania.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.35" date="2026-05-20">
+      <description>
+        <ul>
+          <li>KSeF (korekty importowane, edycja pozycji): Naprawiono ponowne otwieranie do edycji korekt pobranych z KSeF. Dla dokumentów z sekcjami `StanPrzed/PO` formularz nie gubi już pozycji stanu `PO` i nie pokazuje tylko pierwszego wiersza.</li>
+          <li>Podgląd/druk/rozrachunki korekt KSeF (kwota końcowa): Ujednolicono wyliczanie kwoty `Do zapłaty` / `Do zwrotu` dla korekt importowanych z KSeF. Podgląd HTML, wydruk i dialog rozliczenia używają teraz efektywnej wartości stanu `PO` z XML zamiast surowego `total_gross` z bazy, co eliminuje przypadki podwojenia kwoty przy korektach zawierających jednocześnie wiersze `PRZED` i `PO`.</li>
+          <li>KSeF XML (korekty, agregaty P_13/P_14/P_15): Poprawiono wyliczanie agregatów nagłówka korekty dla pozycji liczonych od kwoty brutto lub po rabacie. Generator opiera sumy na rzeczywistych wartościach wierszy, co usuwa rozjazdy groszowe w polach `P_13_x`, `P_14_x` i `P_15`.</li>
+          <li>KSeF FA(3) / kartoteka / import (towary wrażliwe, `P_12_Zal_15`): Dodano obsługę pozycyjnego znacznika „Towar wrażliwy”. Znacznik można ustawić w kartotece i na pozycji faktury, przenosi się z towaru na dokument, jest importowany z faktur KSeF do pozycji i kartoteki oraz eksportowany do schemy FA(3) jako `P_12_Zal_15`.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.34" date="2026-05-19">
+      <description>
+        <ul>
+          <li>KSeF (eksport/import, ceny netto/brutto): Naprawiono rozpoznawanie i zachowanie trybu cen w dokumentach KSeF. Dla dokumentów wystawianych od brutto generator XML emituje wartości brutto pozycji w polu `P_11A`, a importer poprawnie odczytuje tryb brutto na podstawie obecności `P_11A` w `FaWiersz`.</li>
+          <li>Rozrachunki (korekty, prezentacja rozliczenia): Dodano pokazywanie rozliczenia korekty w interfejsie, aby status i kwota rozliczenia dokumentu korygującego były czytelne bez potrzeby ręcznej weryfikacji całego łańcucha dokumentów.</li>
+          <li>KSeF XML (stawki 0%/ZW, stabilność generowania): Naprawiono błąd `NameError: name 'zero_rate_code_for_item' is not defined`, który mógł wystąpić podczas generowania XML dla pozycji ze stawką `ZW`/`0%` (także przy podmiotach będących VAT-owcami).</li>
+          <li>KSeF (token i hasła kluczy certyfikatów, trwałość po aktualizacji): Naprawiono znikanie tokenu i haseł do kluczy certyfikatów po aktualizacji aplikacji. Klucz szyfrowania danych uwierzytelniających jest teraz trwale przechowywany w pliku konfiguracyjnym, a odczyt zachowuje kompatybilność wsteczną ze starszym sposobem szyfrowania.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.33" date="2026-05-18">
+      <description>
+        <ul>
+          <li>KSeF (korekty sprzedaży, FA(3)): Naprawiono generowanie `FaWiersz` dla korekt z dokumentem nadrzędnym. Usunięto emisję niedozwolonego znacznika `StanPo` (powodującego odrzucenie przez KSeF błędem semantycznym `450`). Dla stanu „przed” pozostawiono zgodny ze schemą znacznik `StanPrzed`, a wiersze stanu „po” są generowane bez dodatkowego markera.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.32" date="2026-05-17">
+      <description>
+        <ul>
+          <li>Kwota DO ZAPŁATY w podglądzie i wydruku faktury zawsze pobierana z nagłówka faktury (pole total_gross), niezależnie od sumy pozycji.</li>
+          <li>Rozwiązano problem różnicy 0,01 zł przy pobieraniu tej samej faktury z KSeF przez różne podmioty.</li>
+          <li>Lista faktur (operacje hurtowe, PDF/druk - numeracja stron): Naprawiono numerację stron podczas hurtowego zapisu PDF i wydruku wielu dokumentów. Numeracja jest teraz liczona osobno dla każdej faktury (`Strona X z N` w obrębie danego dokumentu), zamiast globalnie dla całego pakietu.</li>
+          <li>Podgląd korekt (podsumowanie VAT, sekcje PRZED/PO): Naprawiono sposób budowania tabeli podsumowania VAT dla korekt odtwarzanych z dokumentu nadrzędnego (gdy brak sekcji `StanPrzed` w XML). Ujednolicono etykiety stawek VAT (np. `23`, `23%`, `KOR 23%`), dodano czytelny układ sekcji `(PRZED)` i `(PO)`, a wiersz `RAZEM` pokazuje końcowy stan `PO`.</li>
+          <li>Faktury sprzedaży (numeracja): Dodano końcową kontrolę kolizji numeru faktury (`UNIQUE invoices.number`) i automatyczne nadanie kolejnego wolnego numeru przed zapisem, co eliminuje błąd `sqlite3.IntegrityError: UNIQUE constraint failed: invoices.number`.</li>
+          <li>UI (okno tworzenia/edycji faktury, scroll i listy rozwijane): Wyłączono przypadkową zmianę wartości pól rozwijanych i spinboxów podczas przewijania całej karty kółkiem myszy. Zmiana wartości następuje dopiero po świadomym kliknięciu danej kontrolki, co ogranicza ryzyko niezamierzonych modyfikacji.</li>
+          <li>KSeF XML (stawka ZW, zapis/podgląd): Naprawiono regresję, przez którą dla dokumentów z pozycjami `ZW` nie zapisywał się poprawnie XML i nie był generowany podgląd XML. Przywrócono mapowanie stawek 0%/ZW do kodów FA(3), dzięki czemu eksport i podgląd działają ponownie dla pozycji zwolnionych z VAT.</li>
+          <li>Rozrachunki (kolumna Kontrahent, Podmiot 3): W widoku rozrachunków dodano drugi, niebieski wiersz z informacją o Podmiocie 3 przy kontrahencie, tak jak na liście dokumentów. Wiersze z Podmiotem 3 mają teraz identycznie zwiększaną wysokość, co ułatwia identyfikację przy kilku odbiorcach.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.31" date="2026-05-13">
+      <description>
+        <ul>
+          <li>KSeF (korekty, logika rozliczania okresów - tryb mieszany): Zmieniono semantykę korekt w raportach JPK-V7/JPK-FA/JPK-EWP oraz podsumowaniach Revenue na tryb mieszany. Gdy korekta zmienia `date_sale` lub okres (`date_period_end`) dokumentu, działa model dokumentu efektywnego (`stan po`) — dokument korygowany (`parent_id`) jest wykluczany z raportowania, a aktywna korekta jest liczona pełną wartością. Gdy korekta nie zmienia `date_sale`/okresu, pozostaje klasyczny model delta (`in plus/in minus`: `korekta - dokument korygowany`).</li>
+          <li>JPK-V7 / JPK-FA / JPK-EWP (przypisanie faktur do okresów - Art. 32 VAT): Naprawiono kluczowy błąd w przypisywaniu faktur do okresów sprawozdawczych w deklaracjach i ewidencjach. Poprzednio faktury były przypisywane na podstawie daty wystawienia (`date_issue`), a prawidłowo powinny być przypisywane na podstawie daty sprzedaży/dostawy (`date_sale`) zgodnie z Art. 32 Ustawy o VAT, który stanowi: "Obowiązek podatkowy powstaje w momencie dostarczenia towaru lub wykonania usługi". Zmiana dotyczy: (1) JPK-V7M/V7K (sprzedaż i zakupy), (2) JPK-FA(4) (ewidencja faktur), (3) JPK-EWP (ryczałt ewidencjonowany), (4) serwisów przychodów (VAT limit, PPE missing rates, all monthly breakdowns). Funkcja dotyczy także metody kasowej — dla MK liczy się `paid_date` (data płatności), natomiast dla metody memoriałowej i wszystkich pozostałych scenariuszy liczy się `date_sale`. Bezpośrednią konsekwencją jest to, że faktura wystawiona w maju z datą sprzedaży/dostawy w kwietnia będzie ujęta w deklaracji za kwiecień, a nie maj.</li>
+          <li>Rozrachunki (lista, sortowanie kolumny numeru dokumentu): Naprawiono błąd sortowania kolumny "Numer" w widoku rozrachunków. Poprzednio numery były sortowane alfabetycznie (1, 10, 100, 2, 20, 3, itd.), teraz sortowanie jest numeryczne (1, 2, 3, ..., 10, 11, ..., 100). Implementacja wyciąga pierwszą sekwencję cyfr z numeru dokumentu (np. `1` z `1/2024`) i używa jej do sortowania numerycznego zamiast alfabetycznego.</li>
+          <li>Podgląd/Druk korekt (mechanizm Przed/Po i Storno): Zaimplementowano kompleksowy mechanizm renderowania korekt w podglądzie i wydruku dokumentu. Korekty z wierszami `StanPrzed` (standard KSeF) wyświetlają dla każdej pozycji parę wierszy: `Przed:` (wyszarzony, kursywa — stan sprzed korekty) i `Po:` (pogrubiony — stan po korekcie). Mechanizm obsługuje trzy układy wierszy z XML: naprzemienny (`Przed/Po/Przed/Po`), blokowy (wszystkie `Przed`, potem wszystkie `Po`) oraz korekty bez wierszy `StanPrzed`. Gdy korekta nie zawiera sekcji stanu przed w XML, system automatycznie odtwarza ją z dokumentu nadrzędnego wyszukanego po `parent_id`, numerze KSeF lub numerze faktury, z walidacją spójności nazw pozycji i kodów GTIN — w razie niespójności wyświetlane jest ostrzeżenie w podglądzie. Storno: gdy korekta zawiera wyłącznie wiersze `StanPrzed=1` z ujemnymi wartościami (pełne odwołanie dokumentu), system wykrywa to automatycznie i renderuje wiersze ze znakiem ujemnym bez syntetyzowania fikcyjnych wierszy `Po`. Dla korekt importowanych z KSeF, które nie mają pozycji w bazie danych (tylko dane XML `FaWiersz`), tworzone są wirtualne obiekty pozycji, aby podgląd i wydruk zawsze zawierały pełną tabelę pozycji.</li>
+          <li>KSeF (cykliczne monitorowanie nowych faktur zakupu): Naprawiono dwa błędy mechanizmu cyklicznego sprawdzania nowych faktur w KSeF. (1) Zakres dat sprawdzania był liczony od znacznika ostatniej synchronizacji (`ksef_last_sync_purchase_at`), przez co faktury wystawione z datą wsteczną (np. faktura wystawiona 14-ego z datą wystawienia 13-ego) mogły nie zostać wykryte — teraz zakres startuje od daty wystawienia ostatnio pobranej faktury (`Invoice.date_issue`). (2) Po zakończeniu wątku sprawdzającego (`KsefNewInvoicesCheckWorker`) obiekt był usuwany przez Qt (`deleteLater`), lecz Python nadal przechowywał referencję; kolejne wywołanie timera (co 15 minut) próbowało wywołać `isRunning()` na już usuniętym obiekcie C++, powodując błąd `RuntimeError: Internal C++ object already deleted` — naprawiono przez zerowanie referencji przed sprzątaniem wątku i opakowanie wywołań Qt w `try/except RuntimeError`.</li>
+          <li>KSeF (korekty, oznaczenie jako nowe dokumenty): Naprawiono oznaczanie korekt jako nowych dokumentów pobranych z KSeF. Poprzednio tylko faktury były pogrubiane, korekty pozostawały bez wizualnego oznaczenia. Teraz zarówno faktury jak i korekty pobrane z KSeF są automatycznie oznaczane jako nowe dokumenty (pogrubienie) w liście.</li>
+          <li>Lista faktur (operacje, usuwanie znacznika nowego dokumentu - naprawa): Naprawiono błąd w operacji "Odznacz zaznaczone" (usuwanie znacznika nowego dokumentu). Poprzednio funkcja odwoływała się do nieistniejącego atrybutu `self.new_doc_ids` na obiekcie `InvoiceView`; teraz prawidłowo używa `self.model.new_doc_ids` z obiektu modelu tabeli.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.30" date="2026-05-10">
+      <description>
+        <ul>
+          <li>Konfiguracja (Inne → Opcje wydruków, opcja Drukuj rejestry): Dodano nową opcję "Drukuj rejestry" w sekcji Opcje wydruków. Gdy zaznaczona (domyślnie), rejestry VAT (KRS, REGON, BDO) wyświetlane są na dole strony w podglądzie i wydruku. Gdy wyłączona, rejestry są ukrywane. Ustawienie dotyczy zarówno widoku podglądu jak i exportu do PDF.</li>
+          <li>Konfiguracja (Baza Danych, kopie zapasowe ZIP): Zmieniono format tworzenia kopii zapasowej bazy na archiwum `.zip` (zamiast surowego `.db`). Backup jest domyślnie zapisywany w katalogu aktywnej bazy i tworzony jako spójny snapshot SQLite przed kompresją.</li>
+          <li>Konfiguracja (Baza Danych, automatyczna kopia przy zamykaniu): Dodano opcję `Twórz kopię zapasową bazy przy zamykaniu`. Po jej włączeniu program przy zamykaniu pyta o utworzenie kopii tylko wtedy, gdy dla aktywnej bazy nie utworzono jeszcze backupu w danym dniu.</li>
+          <li>Konfiguracja (Baza Danych, okno pytania przy zamykaniu): Dialog auto-backupu ma domyślnie zaznaczony przycisk `Tak`, zawiera przycisk `Nie` do pominięcia tworzenia kopii, a zamknięcie okna (`X`) również pomija backup i kontynuuje zamykanie aplikacji.</li>
+          <li>Rozrachunki (lista, kolumna daty dokumentu): Dodano nową kolumnę "Data" w widoku rozrachunków, umieszczoną między kolumnami "Numer" i "Kontrahent". Kolumna wyświetla datę wystawienia dokumentu dotyczącego rozrachunku. Dla dokumentów typu Sprzedaż/Zakup brana jest data_issue dokumentu, dla dokumentów innego typu (Podatek, Inne) również data_issue (data utworzenia rozrachunku).</li>
+          <li>Lista faktur (operacje hurtowe, liczba dokumentów w tytułach dialogów): Dialogi zapisu plików dla operacji hurtowych (eksport XML, PDF, druk wielu dokumentów) pokazują teraz liczbę wybranych dokumentów w tytule okna (np. "Wybierz katalog zapisu XML (5 dokumentów)", "Zapisz PDF (1 dokument)"). Liczebnik zmienia się prawidłowo w zależności od ilości dokumentów (singularny dla 1, pluralny dla 2+).</li>
+          <li>Lista faktur (operacje hurtowe, odznacz zaznaczone): Dodano nową operację "Odznacz zaznaczone" w menu kontekstowym. Akcja usuwa znacznik "nowy dokument" (pogrubienie) z wybranych wierszy i z bazy danych, przywracając im normalny wygląd. Użytkownik otrzymuje komunikat o liczbie odznaczonych dokumentów. Jeśli żaden z wybranych dokumentów nie ma znacznika, wyświetlany jest odpowiedni komunikat.</li>
+          <li>Lista faktur (nowo pobrane dokumenty, oznaczenie wizualne): Dokumenty pobrane z KSeF są automatycznie oznaczane jako "nowe" w tabeli — wiersze wyświetlane pogrubionym tekstem. Po kliknięciu na dokument oznaczenie znika automatycznie. Wewnętrznie używana jest nowa tabela `new_downloaded_documents` śledzająca ID pobranych dokumentów, umożliwiająca odróżnienie dokładnie pobranych dokumentów od ręcznie wstawionych.</li>
+          <li>KSeF (korekty, normalizacja wartości "PRZED"): Naprawiono obsługę korekt pobranych z KSeF dla sprzedaży i zakupu. Pozycje oznaczone jako "PRZED" (StanPrzed) mogą przybyć z ujemnymi wartościami z XML — program teraz automatycznie konwertuje je na dodatnie (funkcja `abs()`) dla ilości i ceny netto przed wstawieniem do tabeli edycji.</li>
+          <li>KSeF (filtr typów dokumentów, migrator + pobieranie sprzedaży/zakupu): Ograniczono import do dokumentów obsługiwanych przez program: faktur, korekt i faktur uproszczonych (`VAT`, `KOR`, `UPR`). Dokumenty o innych typach są automatycznie pomijane podczas synchronizacji i nie są importowane do programu.</li>
+          <li>KSeF (rabat pozycji, import sprzedaży/zakupu + migrator sprzedaży): Ujednolicono wyliczanie ceny jednostkowej netto po rabacie dla pozycji importowanych z KSeF. Gdy w XML występuje `P_10`, system wylicza cenę jednostkową z `P_11`/`P_11A` i ilości (`P_8B`) zamiast używać ceny bazowej `P_9A`, dzięki czemu podgląd, PDF/wydruk oraz tabela VAT pokazują spójne wartości netto/VAT/brutto.</li>
+          <li>KSeF (rabaty pozycji, historyczne zakupy i korekty): Dodano migrację v21 naprawiającą historyczne dokumenty zakupu i korekty pobrane z KSeF. Migracja ponownie wylicza pozycje na podstawie pól XML `P_11` / `P_11A` (wartości po rabacie) z uwzględnieniem `P_10` oraz koryguje niespójności prowadzące do ujemnego VAT na pozycji. Dzięki temu ceny jednostkowe i kwoty VAT/brutto są spójne z wartościami pozycji po rabacie.</li>
+          <li>Lista faktur (filtry dat, Ostatnie 2 miesiące): Dodano preset `Ostatnie 2 miesiące` do selektora zakresu dat na liście faktur sprzedaży i zakupu. Filtr ustawia zakres od 1. dnia miesiąca sprzed 2 miesięcy do dnia bieżącego.</li>
+          <li>Baza danych (szablon nowej bazy, stawki PPE): Dodano migrację v20 automatycznie wypełniającą tabelę stawek ryczałtu PPE (`lump_sum_rates`) domyślnymi wartościami (2%, 3%, 5,5%, 8,5%, 10%, 12%, 12,5%, 14%, 15%, 17%) wyłącznie gdy tabela jest całkowicie pusta. Jeśli użytkownik ma choćby jedną własną stawkę, migracja nie wprowadza żadnych zmian.</li>
+          <li>Logowanie + wybór bazy (spójny ekran startowy): Zintegrowano wybór Podmiotu/Bazy z oknem logowania. Sekcja `Podmiot / Baza danych` jest widoczna tylko gdy wykryto więcej niż jedną bazę; przy jednej bazie wybór odbywa się automatycznie, a przy braku bazy uruchamiana jest inicjalizacja nowej bazy i od razu tryb pierwszego użytkownika. Dodano też panel `Zaawansowane` (tabela baz) z operacjami zarządzania, zapamiętywaniem szerokości kolumn, domyślnym rozłożeniem kolumn na całą szerokość tabeli oraz wysokością tabeli ograniczoną do maksymalnie 4 wierszy (dalsze wiersze przez przewijanie).</li>
+          <li>Konfiguracja (KSeF, przewijanie zakładki): Dodano `QScrollArea` w zakładce KSeF okna konfiguracji. Przy wąskim oknie zawartość jest teraz przewijana zamiast wzajemnie się nakładać.</li>
+          <li>Lista faktur sprzedaży (kolumna Akcje, blokada przycisku Wyślij): Przycisk "Wyślij do KSeF" w kolumnie Akcji jest teraz wyszarzony i nieaktywny dla faktur o statusie "Pobrana z KSeF", "Wysłano" oraz "Wysłano i potwierdzono". Tooltip informuje o niedostępności akcji dla tych statusów.</li>
+          <li>Konfiguracja (Program → Użytkownik, potwierdzenie hasła): W oknie edycji/dodawania użytkownika dodano pole "Potwierdź hasło" z walidacją zgodności na bieżąco (czerwony komunikat i blokada przycisku Zapisz przy niezgodnych polach).</li>
+          <li>Konfiguracja (Program → Użytkownik, usuwanie hasła): W oknie edycji istniejącego użytkownika (posiadającego hasło) dodano opcję "Usuń hasło", która po zaznaczeniu usuwa ochronę hasłem dla danego konta.</li>
+          <li>KSeF (wysyłka pojedynczego dokumentu, uproszczony workflow): Zmieniono zachowanie wysyłki pojedynczego dokumentu do KSeF. Po pomyślnym wysłaniu program automatycznie pobiera UPO w tle bez otwierania okna dialogowego. Po pobraniu UPO pokazuje komunikat informacyjny zamiast otwierać okno podglądu UPO. Workflow hurtowy (wysyłka wielu dokumentów) pozostaje bez zmian.</li>
+          <li>KSeF (wysyłka, obsługa błędu UPO): Dodano ulepszony dialog obsługi błędów pobierania UPO po wysłaniu dokumentu. Dialog pokazuje komunikat "Dokument wysłany do KSeF, ale nie udało się pobrać UPO" z trzema opcjami: (1) `Zaraportuj` — wysyła pełny raport błędu do programisty, (2) `Szczegóły` — wyświetla szczegółowe informacje o błędzie w osobnym oknie bez wysyłania, (3) `Nie` — zamyka dialog. Dokumenty są zawsze oznaczane jako wysłane, niezależnie od wyniku pobierania UPO.</li>
+          <li>Stabilność bazy danych (SQLAlchemy QueuePool timeout): Naprawiono sporadyczny błąd zapisu konfiguracji: `QueuePool limit size 5 overflow 10 reached, connection timed out`. Przyczyną były niedomknięte sesje DB w wybranych dialogach. Dodano gwarantowane domykanie sesji, co zapobiega kumulacji połączeń i timeoutom puli.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.29" date="2026-05-03">
+      <description>
+        <ul>
+          <li>KSeF (lista faktur, menu wysyłki i zaznaczenia wielokrotne): Uporządkowano akcje wysyłki w menu kontekstowym. Dla dokumentów o statusie `Wysłano` oraz `Wysłana i Potwierdzona` ukryto opcję ponownej wysyłki (`Wyślij ponownie`). Przy zaznaczeniu wielu dokumentów ponowne wysyłanie jest wyłączone, a akcja batch pokazuje teraz `Wyślij do KSeF (N)`, gdzie `N` oznacza faktycznie wysyłalne dokumenty (po odfiltrowaniu już wysłanych i dokumentów niewysyłalnych). Jeśli `N=0`, akcja jest nieaktywna.</li>
+          <li>UI (okno główne, skalowanie pionowe): Naprawiono blokadę zmniejszania okna głównego w pionie. `QStackedWidget` z osadzonymi widokami raportował duże minimum pionowe, które propagowało się do `QMainWindow`. Ustawienie polityki `QSizePolicy.Ignored` w pionie na stosie widoków powoduje, że Qt zeruje minimalne wymaganie pionowe przed nałożeniem ograniczeń layoutu, dzięki czemu okno główne można swobodnie zmniejszać zarówno poziomo, jak i pionowo.</li>
+          <li>UI (okno główne, przyciski menu): Naprawiono zanikanie przycisków modułów po zastosowaniu polityki `QSizePolicy.Ignored`. Przyciski mają teraz ustawioną politykę `Preferred/Fixed` z minimalną szerokością 72 px, co pozwala oknu zwężać się bez ukrywania przycisków.</li>
+          <li>UI (okno edycji faktury, dynamiczna wysokość tabeli pozycji): Tabela pozycji faktury dostosowuje teraz minimalną wysokość do liczby wierszy (minimum 2 wiersze zawsze widoczne). Sekcja sum (netto/brutto/VAT) oraz przyciski dodawania/usuwania pozycji są umieszczone poza obszarem przewijania i pozostają zawsze widoczne niezależnie od wysokości okna. Górna część formularza (daty, kontrahent, waluta) jest przewijalna i nie blokuje dostępu do tabeli przy małym oknie.</li>
+          <li>UI (okno edycji faktury, przyciski Minimalizuj/Maksymalizuj): Dodano przyciski minimalizacji i maksymalizacji do okna edycji faktury (`Qt.WindowMinMaxButtonsHint`).</li>
+          <li>UI (okno edycji faktury, przywracanie geometrii): Naprawiono wychodzenie okna edycji faktury poza obszar roboczego ekranu po przywróceniu zapisanej pozycji. Geometria jest teraz przycinana do dostępnego obszaru ekranu zarówno przy otwieraniu, jak i przy zmianie rozmiaru okna.</li>
+          <li>Wiele podmiotów i baz danych (rozbudowa selektora i stabilność zamykania): Rozszerzono wykrywanie baz o skanowanie wszystkich skonfigurowanych lokalizacji i agregację zgodnych baz w jednym oknie wyboru (z pre-selekcją ostatnio użytej bazy). W tabeli wyboru dodano kolumnę `Ostatnio wybrana`, podpowiedź z pełną ścieżką pliku oraz akcję PPM `Idź do lokalizacji`. Dodatkowo uszczelniono zamykanie aplikacji po `Anuluj` w selektorze, aby nie uruchamiać zapytań do tabel przed pełną inicjalizacją bazy.</li>
+          <li>Rozrachunki (tabela, nowe kolumny): Dodano w widoku rozrachunków kolumny `Kwota Netto` oraz `VAT`, aby szybciej ocenić strukturę kwoty dokumentu bez otwierania podglądu.</li>
+          <li>Rozrachunki (PPM, podgląd dokumentu): Rozszerzono menu kontekstowe o akcję `Podgląd dokumentu`. Dla pozycji powiązanych z fakturą akcja jest aktywna i otwiera podgląd ostatniego dokumentu w łańcuchu korekt; dla pozycji bez powiązanego dokumentu pozostaje nieaktywna.</li>
+          <li>Rozrachunki (Dane do przelewu, Typ Split TAK/NIE): W oknie danych do przelewu dodano przełącznik `Typ Split` (`TAK`/`NIE`) z zapisem stanu do dokumentu. Dostępność opcji jest kontrolowana regułami biznesowymi (m.in. status VAT podmiotu i typ dokumentu).</li>
+          <li>Rozrachunki (Dane do przelewu, szczegóły Split Payment): Dodano sekcję `Szczegóły Split Payment` z prezentacją `Kwota Netto` i `Kwota VAT`. Sekcja jest pokazywana dynamicznie pod polem `Kwota do zapłaty` po włączeniu trybu split.</li>
+          <li>Rozrachunki (Dane do przelewu, UI i motywy): Usprawniono wygląd przełącznika split (bardziej subtelny, mniejszy) i dopasowanie kolorów do jasnego/ciemnego motywu aplikacji. Ramka `Szczegóły Split Payment` została rozciągnięta poziomo na pełną szerokość obszaru formularza.</li>
+          <li>Rozrachunki (Dane do przelewu, QR płatności): Zaktualizowano generowanie kodu bankowego QR tak, aby w trybie split uwzględniał podział kwot netto/VAT, a po zmianie przełącznika odświeżał dane kodu zgodnie z aktualnym trybem.</li>
+          <li>Wiele podmiotów i baz danych: Dodano obsługę pracy na wielu podmiotach z oddzielnymi bazami danych. Przed logowaniem można wybrać podmiot, a system automatycznie wyszukuje dostępne bazy i pozwala szybko przełączyć się na właściwą. Tworzenie nowej bazy działa teraz w tej samej lokalizacji co aktualnie używana baza.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.28" date="2026-05-01">
+      <description>
+        <ul>
+          <li>Wiele podmiotów i baz danych: Dodano obsługę pracy na wielu podmiotach z oddzielnymi bazami danych. Przed logowaniem można wybrać podmiot, a system automatycznie wyszukuje dostępne bazy i pozwala szybko przełączyć się na właściwą. Tworzenie nowej bazy działa teraz w tej samej lokalizacji co aktualnie używana baza.</li>
+          <li>Ryczałt ewidencjonowany (PPE, wyszukiwanie i uzupełnianie stawek): Dodano funkcję szukania pozycji z dokumentów sprzedaży pobranych z KSeF, które nie mają przypisanej stawki podatku PPE. Przy wejściu w eksport JPK_EWP lub podglądzie ewidencji PPE system automatycznie uruchamia kontrolę, wyświetla banner z komunikatem o brakujących stawkach i otwiera dialog umożliwiający szybkie przypisanie stawek (pojedynczo lub masowo dla zaznaczonych pozycji). Obsługiwane są stawki ze słownika LumpSumRate. Po zatwierdzeniu stawki są zapisywane do `InvoiceItem.lump_sum_rate` i agregaty PPE są automatycznie przeliczane.</li>
+          <li>Deklaracje (JPK_EWP): Dodano obsługę eksportu JPK_EWP dla ryczałtu ewidencjonowanego wraz z walidacją danych przed eksportem, generowaniem pliku XML oraz weryfikacją zgodności ze schematem XSD. Mechanizm działa w oparciu o wbudowaną w aplikację wersję schemy, co zapewnia stabilne działanie niezależnie od dostępności zewnętrznych adresów.</li>
+          <li>Dialogi wyboru kontrahenta i Podmiotu 3 (sortowanie po kolumnach): Dodano możliwość sortowania po nazwie, NIP i mieście w dialogu wyboru kontrahenta dla faktury oraz w dialogu wyboru Podmiotu 3 z kartoteki. Kliknięcie na nagłówek kolumny sortuje rosnąco, ponowne kliknięcie zmienia kierunek na malejący. Dialog wyboru jednostek lokalnych z GUS także obsługuje sortowanie po wszystkich kolumnach (Status, Nazwa, Adres, Miasto, Kod, REGON14). Domyślne sortowanie ustawiono na kolumnę Nazwa (rosnąco), a klucz sortowania normalizuje znaki takie jak apostrofy i cudzysłowy, dzięki czemu nazwy są wyświetlane obok siebie.</li>
+          <li>Lista faktur (PPM, podmenu Operacje: XML/PDF/Drukuj): Uporządkowano menu pod prawym przyciskiem myszy przez dodanie podmenu `Operacje` z akcjami `Zapisz XML`, `Zapisz PDF` i `Drukuj`. Dla pojedynczego dokumentu `Zapisz XML` działa jak dotychczas (standardowy dialog wyboru ścieżki i nazwy pliku). Dla wielu zaznaczonych dokumentów `Zapisz XML` prosi o wybór katalogu docelowego i zapisuje oddzielne pliki XML z automatycznymi nazwami opartymi o numery faktur (z bezpieczną obsługą kolizji nazw). Akcje `Zapisz PDF` i `Drukuj` dla wielu zaznaczeń tworzą odpowiednio jeden łączony plik PDF lub jeden łączony wydruk.</li>
+          <li>Lista faktur (Sprzedaż/Zakup, wyszukiwanie dokumentów): Dodano szybkie filtrowanie listy faktur po `Numerze z programu`, `Numerze KSeF` oraz `Nazwie kontrahenta`, z trybem `Wszystkie` i filtrowaniem na żywo podczas wpisywania.</li>
+          <li>Lista faktur (PPM, nawigacja do Informatora): Dodano akcję `Informator kontrahenta` pod prawym przyciskiem myszy na wierszu faktury. Akcja otwiera Informator dla kontrahenta przypisanego do dokumentu (z bezpieczną obsługą faktur bez przypisanego kontrahenta).</li>
+          <li>Informator kontrahenta (filtrowanie list dokumentów): W zakładkach `Sprzedaż` i `Zakup` dodano pasek `Filtr` z wyborem pola (`Wszystko`, `Numer`, `Numer KSeF`) oraz bieżącym zawężaniem listy.</li>
+          <li>Informator kontrahenta (PPM, szybkie filtry): Rozszerzono menu kontekstowe tabel o akcje `Filtruj po tym numerze`, `Filtruj po tym numerze KSeF` oraz `Wyczyść filtr`.</li>
+          <li>Skróty klawiaturowe (Ctrl+F): Dodano obsługę `Ctrl+F` w liście faktur i w Informatorze kontrahenta. Skrót ustawia fokus na polu wyszukiwania/filtra aktywnego widoku i zaznacza aktualny tekst.</li>
+          <li>Podgląd faktury (format liczb, tylko wizualnie): W warstwie wizualizacji dokumentu (podgląd/druk/PDF) dodano prezentację liczb z separatorem dziesiętnym `,` zamiast `.`. Zmiana nie wpływa na dane źródłowe, obliczenia księgowe ani eksport XML/KSeF.</li>
+          <li>KSeF (wysyłka hurtowa, sekwencja wysyłka + UPO): Dodano możliwość zaznaczenia wielu dokumentów na liście faktur i uruchomienia zbiorczej wysyłki do KSeF z jednym potwierdzeniem (`Wyślij zaznaczone (X)`). Po akceptacji uruchamiana jest sekwencja dokument po dokumencie: wysyłka, a następnie automatyczna próba pobrania UPO; na końcu prezentowane jest podsumowanie wyników (`wysłane + UPO`, `wysłane bez UPO`, `błędy`). Dla pojedynczego dokumentu zachowano dotychczasowy tryb wysyłki.</li>
+          <li>KSeF (pobieranie faktur sprzedaży, konfiguracja i import): Dodano pełną obsługę pobierania dokumentów sprzedaży z KSeF sterowaną z Konfiguracja -> KSeF (`Włącz pobieranie dokumentów sprzedaży`). Po włączeniu opcji w module sprzedaży pojawia się przycisk `Pobierz z KSeF`, a synchronizacja działa od ostatniej synchronizacji sprzedaży. Dodano opcje dodatkowe: `Dodawaj rozrachunki sprzedaży` oraz `Mapuj towary i modyfikuj stany na podstawie pobieranych faktur`. W tej sekcji dodano także niebieski przycisk `?` z dialogiem wyjaśniającym działanie synchronizacji i opcji oraz z uwagą, że dokumenty wystawiane przez inne programy powinny mieć inny schemat numeracji niż ustawiony w programie.</li>
+          <li>Konfiguracja (Baza Danych, przycisk pomocy): W zakładce `Baza Danych` dodano niebieski przycisk `?` z dialogiem objaśniającym dostępne operacje: tworzenie nowej bazy podmiotu, wykonanie kopii zapasowej, przywrócenie z kopii oraz reset bazy danych.</li>
+          <li>Numeracja faktur sprzedaży (elastyczne ręczne ustawienie): Umożliwiono ręczne ustawienie numeru sekwencji dla każdej nowej faktury (nie tylko dla pierwszej w okresie). Ta funkcja jest szczególnie przydatna po migracji dokumentów sprzedaży, gdy licznik źle policzył faktury - użytkownik może teraz łatwo skorygować numerację.</li>
+          <li>Lista dokumentów (kolumna Kontrahent, Podmiot 3): W kolumnie Kontrahent wyświetlana jest teraz informacja o Podmiocie 3 jako druga linia komórki w kolorze niebieskim (dostosowanym do aktywnego motywu), zapisana mniejszą czcionką w formacie `(rola nazwa)`. Wiersze z Podmiotem 3 automatycznie zwiększają swoją wysokość, aby pomieścić dodatkową linię, a wiersze bez Podmiotu 3 zachowują standardową wysokość. Wyszukiwarka w liście dokumentów uwzględnia teraz nazwę i rolę Podmiotu 3 przy przeszukiwaniu po kontrahencie. Funkcja działa dla faktur sprzedaży, korekt sprzedaży, faktur zakupu i korekt zakupu.</li>
+          <li>Lista faktur i podgląd (numeracja stron w wydruku/PDF): Dodano numerację stron (`Strona X z N`) w prawym dolnym rogu każdej strony wydruku i pliku PDF - zarówno dla pojedynczego dokumentu w oknie podglądu, jak i podczas zapisu/drukowania wielu dokumentów hurtowo z listy faktur. Numeracja jest teraz zawsze widoczna niezależnie od liczby stron.</li>
+          <li>Konfiguracja (Inne, opcje wydruku - adnotacje): W zakładce `Inne` dodano sekcję `Opcje wydruku` z opcją `Włącz adnotacje w wizualizacji dokumentów` (domyślnie włączona). Gdy opcja jest wyłączona, strona z adnotacjami (metoda kasowa, samofakturowanie, odwrotne obciążenie, MPP itp.) jest pomijana w podglądzie, wydruku i zapisie PDF.</li>
+          <li>Konfiguracja i podgląd/druk (opcje kolumn tabeli pozycji: Indeks i GTU): W sekcji `Inne -> Opcje wydruku` dodano przełączniki `Pokaż kolumnę Indeks (indeks towaru)` (domyślnie włączona) oraz `Pokaż kolumnę GTU` (domyślnie wyłączona). Podgląd, druk i PDF budują teraz nagłówek tabeli pozycji dynamicznie (`items_table_header`) i odpowiednio dostosowują szerokości kolumn oraz wiersze opisów pozycji, tak aby układ pozostał spójny przy każdej kombinacji ustawień.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.27" date="2026-04-25">
+      <description>
+        <ul>
+          <li>UI (lista faktur, kolumny R i Akcje — spójność między buildami): Ujednolicono renderowanie ikon w trybie ciemnym dla Windows, AppImage i Flatpak. Ikony statusu rozliczeń (`R`) oraz przycisków w kolumnie `Akcje` są teraz konsekwentnie tintowane kolorem tekstu z palety Qt, dzięki czemu nie pojawia się rozjazd jasne/ciemne między platformami.</li>
+          <li>Ustawienia VAT (aktualizacja z KSeF schema): Zablokowano ręczne dodawanie i edycję własnych stawek VAT oraz dodano akcję `Aktualizuj stawki z KSeF`. Mechanizm pobiera wartości `TStawkaPodatku` bezpośrednio ze schemy KSeF XSD, a w razie braku dostępu do schemy stosuje bezpieczny fallback hardcoded, aby zachować zgodność działania dla podglądu, wydruków i importowanych dokumentów.</li>
+          <li>JPK / Deklaracje (stawki 0%, spójność klasyfikacji): Ujednolicono normalizację etykiet VAT 0% (`ZW`, `OO`, `NP`, `NP I`, `NP II`, `0 KR`, `0 WDT`, `0 EX`) w logice JPK. Eksport JPK_FA (`P_12`) oraz agregacje do JPK_V7 korzystają teraz ze wspólnego mechanizmu klasyfikacji, co ogranicza rozjazdy między danymi faktury, raportami i deklaracjami.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.26" date="2026-04-22">
+      <description>
+        <ul>
+          <li>UI (lista faktur, kolumna R — ciemny motyw): Naprawiono nieczytelność ikon i tekstu w kolumnie `R` (rozliczenie) na ciemnym motywie systemowym. Ikony statusu są teraz tintowane kolorem tekstu z palety Qt, dzięki czemu pozostają widoczne zarówno na jasnym, jak i ciemnym tle.</li>
+          <li>UI (lista faktur, kolumna Akcje — ciemny motyw): Naprawiono nieczytelność ikon przycisków w kolumnie `Akcje` na ciemnym motywie. Ikony standardowe Qt są automatycznie tintowane jasnym kolorem dla ciemnego tła i ciemnym dla jasnego, a delegat preferuje teraz ikony tematyczne systemu (`document-print-preview`, `document-edit`, `document-send`) z zachowaniem pełnego fallbacku.</li>
+          <li>UI (lista faktur, kolor korekt — ciemny motyw): Kolor tekstu wierszy z korektami jest teraz dobierany względem aktywnego motywu: jasna pomarańcz (`#FF8C40`) w trybie ciemnym, ciemna rdza (`#E65100`) w trybie jasnym, zapewniając czytelność w obu przypadkach.</li>
+          <li>VAT 0% (NP, słowniki i migracja danych): Ujednolicono etykiety stawek `NP` do wariantów `NP I` i `NP II` (z zachowaniem obsługi legacy `NP`). Dodano migrację danych historycznych oraz aktualizację słowników/seedów i walidacji, aby zapis, podgląd, JPK i eksport KSeF używały spójnych oznaczeń.</li>
+          <li>VAT (brakujące stawki KSeF, migracja v19): Dodano brakujące stawki `22%`, `7%`, `4%`, `3%` oraz `0 KR` do słowników VAT i migracji wersjonowanej bazy. Eksport XML FA(3) mapuje teraz te stawki poprawnie do `P_12`.</li>
+          <li>VAT 0% (NP, uszczelnienie reguł biznesowych): Doprecyzowano walidację `NP II`: stawka jest dozwolona wyłącznie dla usług w sprzedaży UE (kraj nabywcy inny niż `PL`) przy aktywnym odwrotnym obciążeniu. W pozostałych przypadkach mechanizm eksportu KSeF stosuje bezpieczny fallback do `NP I`.</li>
+          <li>Faktury sprzedaży i korekty sprzedaży (zwolnienie VAT): Przy zaznaczonym `Zwolnienie z VAT (P_19)` pozycje dokumentu są automatycznie ustawiane na stawkę `ZW`, pole stawki VAT jest blokowane do edycji, a zapis dokumentu jest blokowany jeśli jakakolwiek pozycja ma inną stawkę.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.25" date="2026-04-19">
+      <description>
+        <ul>
+          <li>KSeF (import sprzedaży, kontrahent spoza UE): Naprawiono brak rozpoznawania kontrahenta zagranicznego identyfikowanego przez `NrID` (pole dla podmiotów spoza UE) podczas importu faktur sprzedaży z KSeF. Importer nie odczytywał tego identyfikatora, przez co nabywca spoza UE nie był tworzony w kartotece i `buyer_snapshot` nie zawierał NIP — co skutkowało błędem 450 przy próbie wysyłki korekty do takiej faktury.</li>
+          <li>KSeF XML (nabywca bez NIP — BrakID): Naprawiono błąd generowania XML FA(3) dla faktur wystawianych dla osób fizycznych lub podmiotów bez żadnego identyfikatora podatkowego. Teraz brak identyfikatora powoduje emisję znacznika `BrakID` zgodnie z wymaganiami schematu.</li>
+          <li>KSeF (import, kontrahent z BrakID): Podczas importu faktury z KSeF, gdy nabywca/sprzedawca nie posiada żadnego identyfikatora podatkowego (`BrakID`), program tworzy wpis w kartotece kontrahentów na podstawie nazwy (z flagą „osoba fizyczna"). Przy ponownym imporcie faktury dla tej samej osoby istniejący wpis jest wyszukiwany po nazwie i reużywany zamiast duplikowany.</li>
+          <li>KSeF (import zakupów, komentarze XML): Naprawiono błąd pobierania faktur zakupowych z KSeF pojawiający się dla dokumentów zawierających węzły komentarzy XML. Biblioteka lxml zwraca dla takich węzłów obiekt Cython zamiast stringa jako wartość atrybutu tag, co powodowało wyjątek przy próbie wywołania metody startswith. Dodano pomijanie węzłów niebędących elementami XML w obu miejscach iteracji po zawartości sekcji Fa.</li>
+          <li>Migracja bazy v17 (naprawa historycznych importów KSeF): Automatyczna jednorazowa naprawa faktur pobranych z KSeF: uzupełnienie poprawnej waluty i kursu oraz tworzenie brakujących wpisów kontrahentów dla dokumentów z identyfikatorami `NrID` (podmioty spoza UE) lub `BrakID` (osoby fizyczne bez NIP).</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.24" date="2026-04-16">
+      <description>
+        <ul>
+          <li>Szablony faktur sprzedaży (nowa funkcja): Dodano możliwość zapisywania i wczytywania szablonów formularza faktury. Szablon przechowuje: kontrahenta, walutę, typ ceny, pozycje (wraz z opisem, GTIN i powiązaniem z kartoteką), warunki płatności, adnotacje KSeF (OO, WDT, marża, kasowa, ZW + podstawa), Podmiot 3 oraz uwagi i miejsce wystawienia. Szablony są dostępne z poziomu okna edycji faktury (przyciski „Zapisz szablon" / „Wczytaj szablon") oraz w module Ustawienia → Szablony faktur (podgląd, usuwanie).</li>
+          <li>Szablony faktur (waluta obca): Wczytanie szablonu z walutą inną niż PLN poprawnie pokazuje pola „Kurs" i „Data kursu" oraz automatycznie pobiera aktualny kurs NBP na podstawie bieżącej daty sprzedaży – nie przywraca historycznych wartości z szablonu.</li>
+          <li>Szablony faktur (termin płatności): Przy wczytywaniu szablonu termin płatności jest wyznaczany inteligentnie: jeśli wybrany kontrahent ma skonfigurowany domyślny termin (`default_payment_days`) w kartotece, używane są jego ustawienia; w przeciwnym razie delta dni (różnica między datą sprzedaży a terminem z szablonu) jest przenoszona na bieżącą datę sprzedaży.</li>
+          <li>Numeracja faktur (błąd daty): Zmiana daty faktury na okres, dla którego nie można wyznaczyć kolejnego numeru, wywołuje teraz czytelny komunikat „Błąd numeracji" zamiast cichego traceback w konsoli.</li>
+          <li>KSeF XML (pusty AdresL1, kod 450): Naprawiono błąd weryfikacji semantycznej schematu FA(3). Gdy kontrahent nie miał uzupełnionych pól adresowych (ulica, miasto), generator emitował pusty element `&lt;AdresL1&gt;&lt;/AdresL1&gt;`, co naruszało ograniczenie `MinLength=1` schematu KSeF i skutkowało odrzuceniem faktury z kodem 450. Blok `&lt;Adres&gt;` jest teraz pomijany w całości, gdy nie ma czego tam wpisać; analogicznie zabezpieczono sekcję adresu Podmiotu 3.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.23" date="2026-04-14">
+      <description>
+        <ul>
+          <li>Kontrahenci (Qt, typ Dostawca/Odbiorca): Naprawiono zapis i edycję typu kontrahenta. Zmiana typu na `Dostawca` nie jest już nadpisywana na `Odbiorca`; usunięto także fallbacki wymuszające `Odbiorca` i uodporniono mapowanie typu przy zapisie z dialogów.</li>
+          <li>Dokumenty podgląd (Faktury, korekty): W wizualizacji dokumentów dodano odstęp pomiędzy sekcją płątności a uwagami oraz rozdzielono delikatną pionową kresą obie sekcje.</li>
+          <li>Deklaracje (PIT, liniowy/skala): Uporządkowano logikę zestawienia dla form opodatkowania innych niż ryczałt. Zakładka zmienia teraz nazwę zgodnie z konfiguracją (`Podatek Liniowy` / `Skala Podatkowa`), a wyliczenie zaliczki PIT opiera się na uproszczonym dochodzie (`sprzedaż netto - zakupy netto`) zamiast samego przychodu.</li>
+          <li>Deklaracje (PIT, korekty i rozrachunki): Dla akcji `Dodaj zaliczkę PIT` dodano dymek informacyjny oraz dialog korekty (szacunek, korekta ręczna, odliczenie ZUS). Zatwierdzona kwota jest zapisywana jako „wyrocznia” miesięczna i wpływa na wyliczenia kolejnych miesięcy.</li>
+          <li>Deklaracje (Ewidencja VAT, korekty i rozrachunki): Rozszerzono tabelę VAT o kolumnę `VAT do Rozrach. (wyrocznia)` oraz akcję `Dodaj VAT` z dialogiem korekty. Skorygowana kwota VAT jest zapisywana jako miesięczna „wyrocznia” i jest używana jako punkt odniesienia w dalszych wyliczeniach narastających.</li>
+          <li>Deklaracje (limity zwolnienia VAT): Dodano banner statusu progów dla podmiotów korzystających ze zwolnienia podmiotowego z VAT (próg ostrzegawczy / przekroczenie limitu), zgodnie z wartościami z konfiguracji firmy.</li>
+          <li>Ewidencja VAT (korekty zakupowe): Uszczelniono wyliczenia dla korekt zakupowych bez `parent_id` (tzw. korekty osierocone) przez fallback powiązania po numerach referencyjnych, co eliminuje ryzyko podwójnego naliczenia wartości w rejestrze.</li>
+          <li>Deklaracje (kopiowanie danych z tabel): Dodano menu kontekstowe kopiowania dla zestawień PIT i VAT: `Kopiuj zaznaczony miesiąc/kwartał` oraz `Kopiuj całe zestawienie`. Dane są kopiowane do schowka w formacie TSV (tabulacje + nowe linie), gotowym do wklejenia np. do Excela lub LibreOffice Calc.</li>
+          <li>Faktury (zwolnienie VAT, podstawa prawna): W polu podstawy zwolnienia VAT dodano autouzupełnianie z historii wpisów (osobno dla `USTAWA` / `DYREKTYWA` / `INNE`) oraz przycisk usuwania błędnej pozycji z historii. Historia jest zapamiętywana per podmiot (NIP), a przy wymuszonej podstawie z konfiguracji podmiotu mechanizm podpowiedzi i edycji historii pozostaje wyłączony.</li>
+          <li>KSeF (kontrahenci spoza UE, kody krajów): Poprawiono błąd mapowania zagranicznych kodów literowych. Wpisanie kodu państwa spoza UE (np. `NO`) nie wymusza już błędnej nazwy "Zagranica", ale prawidłowo przypisuje kraj (np. "Norwegia") ze słownika ISO. Rozwiązuje to problem, przez który KSeF całkowicie odrzucał faktury wystawiane dla podmiotów spoza Unii Europejskiej z powodu błędów weryfikacji semantycznej (niezgodność wzorca literowego kraju).</li>
+          <li>UI (zgłaszanie błędów, kontakt): Usunięto zewnętrzne przekierowania przeglądarki na formularze webowe i zaimplementowano je sprzętowo bezpośrednio z okna programu (pod przyciskiem "Zgłoś błąd" w błędach komunikacji KSeF). Autouzupełniają one pola od razu z profilu bieżącego użytkownika lub nazwy firmy. Dodano zaawansowaną interpretację komunikatów błędów KSeF, usuwającą surowe treści JSON z głównych okienek na rzecz skróconych, bardziej czytelnych opisywań błędu.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.22" date="2026-04-12">
+      <description>
+        <ul>
+          <li>KSeF (import zakupów/migrator, waluty obce): Poprawiono import faktur zakupowych w walucie innej niż `PLN` w module Qt. Importer zapisuje teraz `KodWaluty` oraz `KursWaluty` (z fallbackiem na wyliczenie kursu z pól `P_14_x/P_14_xW`), dzięki czemu faktury z KSeF zachowują poprawną walutę i kurs.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.21" date="2026-04-12">
+      <description>
+        <ul>
+          <li>Faktury (walidacja OO, kontrahenci UE): Usunięto zbyt restrykcyjne ograniczenie wymagające wyłącznie stawki `OO` po zaznaczeniu opcji odwrotnego obciążenia.</li>
+          <li>KSeF (zgodność ze schematem P_12): Dopuszczono również warianty `NP` (`NP`, `NP I`, `NP II`) dla pozycji na fakturze przy aktywnym odwrotnym obciążeniu, zgodnie z dozwolonymi wartościami pola `P_12`.</li>
+          <li>UI (lista faktur sprzedaży i zakupu, kolumna R): Po kliknięciu prawym przyciskiem myszy na kolumnie `R` wyświetlane jest dedykowane menu rozrachunków: `Pokaż dane do przelewu`, `Rozlicz`, `Rozlicz zbiorczo`, `Pokaż wpłaty`. Akcje wykorzystują istniejące mechanizmy modułu rozrachunków (bez duplikowania logiki) oraz poprawnie mapują operacje dla całego łańcucha korekt.</li>
+          <li>Rozrachunki (łańcuch korekt, saldo i status): Naprawiono przekłamanie statusu częściowego rozliczenia dla faktury bazowej z korektami. Bilans i oznaczenie kolumny `R` są liczone względem ostatniego dokumentu wątku (z uwzględnieniem sumy wpłat całej rodziny), co eliminuje przypadki typu `80 -> korekta 70` z błędnym „brakuje 10”.</li>
+          <li>Kontrahenci (Informator, PPM): Dodano opcję `Informator` pod prawym przyciskiem myszy na kontrahencie. Okno zawiera zakładki `Sprzedaż` i `Zakup` z listą dokumentów (`Data`, `Numer`, `Numer KSeF`, `Kwota netto`, `Kwota brutto`) oraz podsumowaniem kwot na dole.</li>
+          <li>Kontrahenci (Informator, podgląd i kopiowanie): W tabelach Informatora podgląd faktury otwiera się po `PPM -> Podgląd faktury`, podwójnym kliknięciu oraz klawiszu `Enter`. Dodano także kopiowanie: `Kopiuj zaznaczony wiersz` i `Kopiuj całą listę`.</li>
+          <li>Towary i usługi (Informator, PPM): Dodano opcję `Informator` pod prawym przyciskiem myszy na pozycji kartoteki. Okno zawiera zakładki `Zakup` i `Sprzedaż` z listą dokumentów (`Kontrahent`, `Numer faktury`, `Numer faktury KSeF`, `Data`, `Cena netto`, `Cena brutto`) oraz podsumowaniem na dole.</li>
+          <li>Towary i usługi (Informator, ilość/podgląd/kopiowanie): Kolumna i suma `Ilość` są pokazywane tylko przy włączonej kontroli stanów magazynowych. W tabelach Informatora podgląd faktury działa po `PPM -> Podgląd faktury`, podwójnym kliknięciu i klawiszu `Enter`; dodano też `Kopiuj zaznaczony wiersz` oraz `Kopiuj całą listę`.</li>
+          <li>Towary i usługi (Informator, sortowanie i układ kolumn): W zakładkach `Zakup` i `Sprzedaż` kolumna `Data` została przeniesiona na początek tabeli. Dodano sortowanie po nagłówkach z trwałym zapisem i odtwarzaniem ustawień (kolumna + kierunek) po ponownym uruchomieniu aplikacji.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.20" date="2026-04-09">
+      <description>
+        <ul>
+          <li>Podgląd faktury (tabela VAT): Ujednolicono klasyfikację stawek VAT między pozycjami a tabelą podsumowania, dzięki czemu etykiety `ZW` / `OO` / `NP` / `0% WDT` są prezentowane spójnie i bez zamian.</li>
+          <li>KSeF (zwolnienie z VAT, eksport XML): Poprawiono logikę `P_19` / `P_19A` / `P_19B` / `P_19C` / `P_19N`. System emituje właściwy wariant podstawy prawnej zwolnienia oraz ustawia `P_19` także dla dokumentów mieszanych zawierających pozycje `ZW`.</li>
+          <li>KSeF (zwolnienie z VAT, zapis i walidacja): Uporządkowano zapis typu podstawy zwolnienia jako kodu logicznego (zamiast tekstu UI), poprawiono odczyt przy edycji dokumentu oraz dodano walidację wymagającą podstawy prawnej dla faktur z pozycjami `ZW`.</li>
+          <li>KSeF (import XML, round-trip): Rozszerzono import o pełne odtwarzanie danych zwolnienia z pól `P_19A/B/C` (typ i treść podstawy), aby ponowna edycja i eksport zachowywały komplet informacji.</li>
+          <li>UI (Konfiguracja firmy i Edycja faktury): Dodano przyciski pomocy `?` oraz okna objaśniające wybór podstawy zwolnienia (`P_19A/B/C`) wraz z przypomnieniem o konieczności podania konkretnego przepisu.</li>
+          <li>Adnotacje KSeF (podgląd faktury): Naprawiono mapowanie wskaźników adnotacji. Znacznik „Brak wystąpienia procedur marży” jest liczony na podstawie rzeczywistego `margin_procedure_type` (zamiast typu dokumentu), co usuwa rozjazdy między formularzem, podglądem i XML.</li>
+          <li>KSeF (P_23, faktura uproszczona): Uporządkowano przepływ danych dla `P_23` / `is_simplified` w obie strony. Import XML zapisuje flagę uproszczenia, a generator XML i podgląd wykorzystują ją konsekwentnie.</li>
+          <li>Adresy (podgląd faktury + KSeF XML): Ujednolicono eksport XML do wariantu zgodnego z walidatorem schematu: `Adres/KodKraju + AdresL1 (+ opcjonalnie AdresL2)` dla podmiotów krajowych i zagranicznych. `AdresL1` zawiera linię ulicy, a `AdresL2` linię `Kod + Poczta`. W podglądzie przy różnicy `Miasto/Poczta` format linii ulicy to `Ulica, Miasto`.</li>
+          <li>Adresy (Poczta vs Miasto, eksport PL): W wariancie krajowym `AdresL2` stosuje `Kod + Poczta` (z fallbackiem do `Miasto`). Dodatkowo parser importu odczytuje `AdresL2` w formacie `NN-NNN MIEJSCOWOSC` i mapuje go do pól `postal_code`/`city`.</li>
+          <li>Adresy (import fallback, zgodność międzynarodowa): Rozszerzono fallback importu dla przypadków, gdy nadawca zapisze cały adres w `AdresL1` (bez `AdresL2`) oraz dodano bardziej elastyczne rozpoznawanie kodów/miejscowości dla formatów zagranicznych.</li>
+          <li>Numeracja faktur sprzedaży (ręczna sekwencja przy starcie okresu): W generatorze numeru dodano możliwość podania ręcznego numeru sekwencyjnego wyłącznie wtedy, gdy dla bieżącej daty kolejnym numerem jest `1` (pierwsza faktura w roku dla numeracji rocznej lub pierwsza faktura w miesiącu dla numeracji miesięcznej). Jeśli po ustawieniu ręcznej sekwencji data zostanie zmieniona na inny okres numeracyjny, system automatycznie przywraca numerację domyślną dla nowej daty i wyświetla komunikat informacyjny.</li>
+          <li>Numeracja faktur sprzedaży (zmiana numeru startowego): Dla pierwszego dokumentu w okresie numeracyjnym można ustawić własny numer startowy sekwencji (zamiast domyślnego `1`), co pozwala kontynuować numerację z innego systemu przy starcie nowego roku/miesiąca.</li>
+          <li>Lista faktur (filtr dat, sprzedaż i zakup): Usunięto górną blokadę daty do dnia bieżącego. Presety `Pokaż z` działają teraz jako filtr `od daty` (limit wstecz pozostaje), dzięki czemu dokumenty z datą przyszłą są widoczne na liście.</li>
+          <li>Migracja sprzedaży z KSeF (osobny mechanizm): Dodano dedykowany przycisk `Importuj sprzedaż z KSeF` dostępny tylko dla pustego modułu sprzedaży. Mechanizm jest rozdzielony od bieżącej synchronizacji zakupów i uruchamia własny przepływ importu dokumentów sprzedażowych (`Subject1`, w tym korekt). W trybie migracji mapowane są także pola `sequence_number` / `sequence_year` / `sequence_month` na podstawie numeru dokumentu i aktywnego wzorca numeracji (z fallbackiem best-effort).</li>
+          <li>Migracja sprzedaży z KSeF (wybór okresu): Po uruchomieniu importu sprzedaży pojawia się dialog wyboru zakresu: `bieżący miesiąc` lub `bieżący rok`. Domyślna opcja jest ustawiana automatycznie na podstawie konfiguracji numeracji sprzedaży (miesięczna/roczna).</li>
+          <li>Migracja sprzedaży z KSeF (opcje importu): W dialogu migracji dodano konfigurację: `Dodaj towary/usługi do kartoteki` (mapowanie po GTIN lub Index/SKU z aktualizacją danych istniejących rekordów) oraz `Dodaj rozrachunki` (tworzenie danych planowanych płatności: metoda, kwota, termin; z uwagą, że KSeF nie udostępnia historii realnych spłat).</li>
+          <li>KSeF (parowanie korekt z dokumentem nadrzędnym, sprzedaż i zakup): Ujednolicono mechanizm wiązania po `DaneFaKorygowanej/NrKSeFFaKorygowanej` (z fallbackiem do `NrFaKorygowanej`) dla całego łańcucha korekt. Dodano także obligatoryjny backfill `parent_id` po każdym imporcie, dzięki czemu korekty odebrane wcześniej jako osierocone są automatycznie podpinane po późniejszym pobraniu dokumentu nadrzędnego.</li>
+          <li>Migracja sprzedaży z KSeF (towar vs usługa w kartotece): Uszczelniono klasyfikację pozycji przy imporcie kartoteki. Jeśli pozycja ma `GTIN` lub `Index/SKU`, jest traktowana jako towar (`is_service = False`) zarówno przy tworzeniu nowego rekordu, jak i przy aktualizacji istniejącego.</li>
+          <li>Migracja sprzedaży z KSeF (odporność na limity API): Uszczelniono ścieżkę pobierania XML per-faktura (fallback po paczce): dodano bezpieczny throttling zgodny z limitem KSeF oraz retry dla `429 Too Many Requests` z odczytem czasu oczekiwania z komunikatu API.</li>
+          <li>Faktury uproszczone (zakup, logika kwot): Dla dokumentów oznaczonych jako uproszczone dodano dedykowane zasady prezentacji i sumowania: wyrocznią pozostaje końcowa kwota brutto dokumentu, z bezpiecznym wyrównaniem różnic zaokrągleń.</li>
+          <li>Faktury uproszczone (stawki VAT na pozycjach): Rozszerzono obsługę pozycji o wariant mieszany: jeśli na pozycji uproszczonej podano liczbową stawkę VAT, system rozbija kwotę brutto pozycji na netto/VAT; dla stawek nienumerycznych utrzymuje tryb uproszczony bez rozbicia.</li>
+          <li>Podgląd faktur zakupowych z importu KSeF: Naprawiono przypadki zaniżonego/pustego netto i zawyżonego VAT (czasem VAT = brutto) dla części dokumentów uproszczonych i korekt. Poprawka dotyczy wyłącznie warstwy podglądu.</li>
+          <li>Podgląd korekt (Przed/Po, import KSeF): Uszczelniono renderowanie pozycji korekt dla układów mieszanych (`StanPrzed` + `Po`) i scenariuszy ręcznych, tak aby podgląd nie gubił sekcji `Po`.</li>
+          <li>Ewidencja VAT i JPK (łańcuch korekt): Doprecyzowano wyliczanie delty korekt także przy brakującym `parent_id` (fallback po `related_ksef_number` / `related_invoice_number`), co eliminuje ryzyko dublowania wartości w łańcuchu dokumentów.</li>
+          <li>Import kontrahenta zagranicznego (TIN/NIP): Poprawiono mapowanie identyfikatora podatkowego przy imporcie z KSeF: prefiks kraju (np. `DE`) jest zapisywany w `country_code`, a w `nip` pozostaje część numerowa.</li>
+          <li>JPK (NrKontrahenta / NrDostawcy): Ujednolicono eksport TIN: `KodKrajuNadaniaTIN` jest emitowany osobno, a pola numeru kontrahenta/dostawcy są normalizowane bez prefiksu kraju.</li>
+          <li>Migracja bazy v11 (normalizacja TIN): Dodano migrację porządkującą historyczne dane kontrahentów i snapshotów (`DE123...` -> `123...` przy `country_code=DE`).</li>
+          <li>Podgląd dokumentów (lokalizacja nazw krajów): Nazwy państw kontrahenta są teraz tłumaczone zgodnie z wybraną wersją językową podglądu (`PL` / `EN` / `DE`).</li>
+          <li>Stabilność i zgodność ścieżek: Zachowano pełną kompatybilność wsteczną dla faktur nieuproszczonych (`is_simplified = False`) — dotychczasowa logika VAT i podglądu działa bez zmian.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.19" date="2026-04-07">
+      <description>
+        <ul>
+          <li>Magazyn (sprzedaż usług z kartoteki): Poprawiono walidację stanów magazynowych przy zapisie pozycji faktury. Pozycje oznaczone jako `usługa` (także wybrane z katalogu) nie są blokowane stanem magazynowym `0`; kontrola ilości dotyczy wyłącznie towarów.</li>
+          <li>UI (okno edycji faktury, Podmiot 3): Uszczelniono zachowanie zakładki `KSeF / Opcje` po rozwinięciu sekcji Podmiot 3. Zawartość zakładki jest przewijana (scroll), dzięki czemu okno nie rozszerza się pionowo poza pulpit i przyciski `Zapisz` / `Anuluj` pozostają dostępne.</li>
+          <li>UI (lista faktur sprzedaży i zakupu): Dodano sortowanie po kliknięciu nagłówków kolumn na listach faktur (wspólny widok dla modułów sprzedaż/zakup), z obsługą sortowania rosnąco/malejąco dla kluczowych kolumn.</li>
+          <li>KSeF (Podmiot 3, role odbiorcze): Rozszerzono zasady identyfikacji dla roli `ODBIORCA` do modelu jak dla JST/GV: można użyć `ID-Wew`, a gdy `ID-Wew` jest puste, wymagany jest `NIP`.</li>
+          <li>KSeF (Podmiot 3 + WDT): Dla faktur sprzedaży z aktywnym `WDT` i rolą `ODBIORCA` ukryto pole `ID-Wew` oraz wymuszono `NIP`; w eksporcie XML identyfikator jest emitowany jako `NIP`/`NrVatUE` (z `KodUE`) zamiast `IDWew`.</li>
+          <li>Podgląd faktury (Podmiot 3, identyfikator): Jeśli dla Podmiotu 3 zdefiniowano `ID-Wew`, podgląd pokazuje `ID-Wew` zamiast `NIP`.</li>
+          <li>Podgląd i edycja (Podmiot 3, dane adresowe opcjonalne): Uszczelniono logikę widoczności danych adresowych, aby sam domyślny `country_code=PL` nie włączał sekcji adresowej i nie wyświetlał kraju bez realnych danych adresowych.</li>
+          <li>KSeF XML Generator (stabilność): Naprawiono błąd `UnboundLocalError` (`cannot access local variable 'EU_COUNTRIES'`) wynikający z lokalnego cieniowania stałej w metodzie generowania XML.</li>
+          <li>Kartoteka kontrahentów (dane bankowe): Dodano pola `Numer konta`, `SWIFT/BIC` i `Nazwa banku` (opcjonalne, zgodne wstecz). Numer konta ma formatowanie i walidację `26 cyfr` jak w danych podmiotu.</li>
+          <li>Podmiot 3 (rola Faktor/Płatnik) – sprzedaż i zakup: Dodano dedykowane pola bankowe (`Nr konta`, `SWIFT/BIC`, `Nazwa banku`) z auto-uzupełnianiem z kartoteki, walidacją konta (`26 cyfr`), synchronizacją z sekcją płatności dla zakupów oraz blokadą ręcznej edycji pól płatności przy aktywnej roli Faktor/Płatnik (edycja z sekcji Podmiot 3).</li>
+          <li>KSeF XML i podgląd (sekcja płatności, Faktor/Płatnik): `Platnosc/RachunekBankowy` i podgląd dokumentu korzystają z danych podmiotu 3 (konto/SWIFT/nazwa banku) dla ról Faktor i Płatnik zamiast danych podmiotu. Dla faktur i korekt zakupu priorytetem odczytu jest sekcja płatności XML (`Platnosc/RachunekBankowy`), także przy pierwszym otwarciu podglądu.</li>
+          <li>KSeF (FA(3) 1-0E, Podmiot 2): Uporządkowano generowanie sekcji `Podmiot2` do pełnej zgodności ze schematem. Znaczniki `JST` i `GV` są teraz emitowane zawsze (wartość `1` albo `2`), co eliminuje błędy walidacji typu „Podmiot2 has incomplete content”.</li>
+          <li>KSeF (import/eksport, round-trip JST/GV): Przy imporcie faktur z KSeF flagi `JST`/`GV` z `Podmiot2` są zapisywane także do `buyer_snapshot`, dzięki czemu ponowny eksport zachowuje te dane bez utraty.</li>
+          <li>Podmiot 3 (role JST/GV odbiorcy): Doprecyzowano logikę krzyżowych znaczników. Dla ról odbiorczych Podmiotu 3 znaczniki odnoszą się do Odbiorcy (`Podmiot2`) i są odpowiednio mapowane do XML.</li>
+          <li>UI (Podmiot 3, opisy i podpowiedzi): Ujednoznaczniono komunikaty przy checkboxach JST/GV i w podpowiedziach, aby jasno wskazywały, że znaczniki dotyczą `Podmiot2`.</li>
+          <li>Walidacja (Podmiot 3, Faktor/Płatnik): Dla ról `Faktor` i `Płatnik` wymagane są teraz jednocześnie: `NIP` oraz numer konta (`26 cyfr`).</li>
+          <li>Walidacja (Podmiot 3, zmiana roli): Przy przełączeniu na role, które nie obsługują `ID-Wew`, pole `ID-Wew` jest automatycznie czyszczone, aby nie wpływało na walidację i wybór identyfikatora w XML.</li>
+          <li>UI (Podmiot 3, pola bankowe): Naprawiono edycję pól `SWIFT/BIC` i `Nazwa banku` dla Podmiotu 3. Można je teraz poprawnie wyczyścić do pustej wartości (bez odtwarzania ostatniej litery przez synchronizację).</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.18" date="2026-04-04">
+      <description>
+        <ul>
+          <li>Adnotacje KSeF (UI): Ujednolicono logikę współzależności opcji (WDT, odwrotne obciążenie, marża, zwolnienie z VAT, metoda kasowa) oraz poprawiono domyślny dobór stawki VAT przy OO.</li>
+          <li>Procedura marży (formularz + model): Uporządkowano zapis i odczyt typu marży jako kodu logicznego (`TURYSTYKA`, `UZYWANE`, `DZIELA`, `ANTYKI`).</li>
+          <li>PMarzy (eksport/import XML): Dodano pełne mapowanie `PMarzy` w obie strony: poprawna emisja pól `P_PMarzy_*` w XML i odczyt tych pól do `margin_procedure_type` podczas importu.</li>
+          <li>KSeF (import korekt zakupu, rekoncyliacja): Dodano inteligentne podpinanie korekty z KSeF do istniejącej lokalnej korekty zakupu (fuzzy match numeru po normalizacji), z aktualizacją danych z dokumentu KSeF zamiast tworzenia duplikatu.</li>
+          <li>KSeF (stabilność rekoncyliacji pozycji i płatności): Poprawiono odtwarzanie pozycji i rozbić płatności przy rekoncyliacji, aby eliminować przypadki błędnego `INSERT` i konfliktu unikalności numeru faktury.</li>
+          <li>Faktury (duplikacja, termin płatności): Przy duplikacji zachowywana jest metoda płatności z dokumentu źródłowego, a termin płatności wyliczany jest ponownie z ustawień kontrahenta (`default_payment_days`) zamiast ustawiania daty bieżącej.</li>
+          <li>Lista faktur (filtr dat): Zastąpiono pola „Od/Do” jednym filtrem „Pokaż z” z presetami: Dzisiaj, 3 dni, 7 dni, 30 dni, bieżący miesiąc, kwartał, rok oraz „Bez ograniczeń”. Ustawienie jest zapamiętywane osobno dla listy sprzedaży i zakupu.</li>
+          <li>KSeF (dialog pobierania, zakres): Opcja zakresu pobierania (wg filtra listy / kontynuuj od ostatniej faktury) jest zapamiętywana i przywracana przy kolejnym otwarciu dialogu.</li>
+          <li>Deklaracje / JPK (stawki 0%): Dodano rozbicie stawek 0% na etykiety podatkowe (np. `ZW`, `0% WDT`, `NP`, `OO`) jeśli występują.</li>
+          <li>Deklaracje (raport wykluczonych dokumentów): Uproszczono układ raportu pod wysyłkę e-mail: orientacja pionowa A4, kolumny kluczowe dla księgowości (NIP, numer faktury, dostawca, kwoty), bez kolumny daty wykluczenia, wiersz w jednej lini.</li>
+          <li>KSeF (Podmiot 3): Dodane obsługę Podmiot 3 z wyborem ról i uwzględnieniem ID_Wew dla Grupy Vat i Jednostek samorządu terytorialnego.</li>
+          <li>KSeF (zakres importu Dla podmiot3): Doprecyzowano zakres automatycznego pobierania: obsługa ról `Subject1`/`Subject2` z importem danych `Podmiot3` jako kontekstu; przypadki „firma tylko jako `Podmiot3`” pozostają poza domyślną ścieżką.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.17" date="2026-04-02">
+      <description>
+        <ul>
+          <li>Faktury zakupu (wykluczenie z księgowości): Dodano możliwość oznaczania faktur zakupu i korekt zakupu jako nieautoryzowane z poziomu menu kontekstowego listy faktur. Wykluczony dokument jest ukrywany na liście, ale pozostaje w bazie, dzięki czemu ponowne pobranie z KSeF nie tworzy duplikatu.</li>
+          <li>Faktury zakupu (czyszczenie powiązań po wykluczeniu): Wykluczenie dokumentu automatycznie usuwa jego rozrachunek, odłącza kontrahenta, czyści powiązania pozycji z kartoteką towarów/usług oraz usuwa powiązane ruchy magazynowe.</li>
+          <li>Deklaracje (zestawienie wykluczonych dokumentów): Dodano nową zakładkę „Wykluczone z ewidencji” z listą dokumentów nieautoryzowanych oraz możliwością ich przywrócenia do ewidencji.</li>
+          <li>Deklaracje (raport wykluczonych dokumentów): Dodano druk i eksport PDF zestawienia dokumentów wykluczonych wraz z danymi podmiotu, kwotami netto/brutto oraz datą wykluczenia.</li>
+          <li>Deklaracje (filtr okresu dla wykluczonych): Dla zestawienia wykluczonych dokumentów dodano filtr miesięczny z domyślnym ustawieniem na bieżący miesiąc oraz automatyczny backfill daty wykluczenia dla starszych rekordów.</li>
+          <li>Księgowość / JPK / Ewidencje: Dokumenty oznaczone jako nieautoryzowane zostały wykluczone z wyliczeń JPK_V7, JPK_FA, ewidencji VAT oraz zestawień przychodów i rozchodów na poziomie usług logiki biznesowej.</li>
+          <li>Podgląd faktury (stawki VAT na pozycjach): Poprawiono prezentację kolumny VAT w tabeli pozycji dokumentu. Dla stawek opisowych wykorzystywana jest teraz etykieta pozycji (np. `ZW`, `0% WDT`, `NP`, `OO`) zamiast wymuszonego `0%`.</li>
+          <li>Kartoteka towarów i usług (stawki VAT 0%): Naprawiono przenoszenie stawek VAT z kartoteki na fakturę. Dla pozycji o tej samej wartości liczbowej stawki (np. `ZW` i `0% WDT`) system zapamiętuje i odtwarza właściwą etykietę, zamiast wybierać pierwszą pasującą po samym `0.0`.</li>
+          <li>Podgląd dokumentów (język niemiecki): Uporządkowano niemieckie tłumaczenia dokumentów zgodnie z praktyką DE/A/CH, m.in. dla nagłówków faktur, reverse charge, kwoty do zapłaty, samofakturowania oraz opisów adnotacji podatkowych.</li>
+          <li>Podgląd dokumentów (samofakturowanie DE): Dla niemieckiego podglądu dokumentów z opcją samofakturowania nagłówek zmienia się teraz na `Gutschrift`.</li>
+          <li>Kody QR KSeF (środowisko produkcyjne/testowe): Naprawiono wybór domeny dla linków QR. Nowe dokumenty zapisują środowisko KSeF zgodne z aktywną konfiguracją firmy, a generatory QR w podglądzie faktury i rozrachunkach używają bezpiecznego fallbacku, dzięki czemu w trybie produkcyjnym nie pojawiają się już linki do `qr-demo.ksef.mf.gov.pl`.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.16" date="2026-03-31">
+      <description>
+        <ul>
+          <li>Faktury (Walidacja zapisu): Uniemożliwiono zapis faktury bez wybranego kontrahenta, bez co najmniej jednej pozycji dokumentu oraz z wartością brutto równą zero. Blokada wartości zerowej nie dotyczy faktur korygujących, które mogą wyzerować dokument pierwotny.</li>
+          <li>KSeF (Kontrola przy zamykaniu programu): Dodano ostrzeżenie przy próbie wyjścia z aplikacji, jeśli w bieżącym dniu istnieją dokumenty sprzedaży niewysłane do KSeF, z możliwością pozostania w programie.</li>
+          <li>KSeF (Faktury zakupu, monitoring): Dodano automatyczne sprawdzanie nowych faktur zakupowych po zalogowaniu, z opcjonalnym trybem cyklicznym, powiadomieniami systemowymi, znacznikiem przy przycisku „Pobierz z KSeF” oraz opcją automatycznego pobierania dokumentów.</li>
+          <li>Faktury (Stabilność wyliczeń pozycji): Usunięto zapętlenie sygnałów w edycji pozycji, które mogło prowadzić do błędu rekurencji podczas przeliczania wartości wierszy i sum dokumentu.</li>
+          <li>Faktury (Ikony GTIN/powiązania): Ujednolicono ikonę informacji na kolumnie SKU oraz doprecyzowano jej widoczność: przy wyłączonych stanach magazynowych oznaczenia są pokazywane wyłącznie dla GTIN.</li>
+          <li>Faktury zakupu (Tryb tylko do odczytu): Dla dokumentów z blokadą edycji dopracowano zapis kartoteki i powiązań: przycisk „Zapisz” jest aktywowany dopiero po zaznaczeniu opcji zapisu do kartoteki; zapis działa również bez modułu stanów magazynowych (bez ruchów stanów).</li>
+          <li>Faktury zakupu (Komunikaty po zapisie): Uproszczono podsumowanie zapisu. W trybie magazynowym komunikat pokazuje liczbę: nowych pozycji, pozycji istniejących w kartotece, dodanych i usuniętych powiązań; poza trybem magazynowym pokazuje liczbę zapisanych nowych pozycji i pozycji istniejących w kartotece.</li>
+          <li>Kartoteka Towary i usługi (UI): Dodano kolumnę ID oraz wyszukiwanie po: ID, Nazwa, SKU, GTIN z automatycznym przewinięciem i zaznaczeniem pierwszego wyniku (domyślnie wyszukiwanie po nazwie).</li>
+          <li>Kartoteka Kontrahenci (UI): Dodano wyszukiwanie po NIP i Nazwa z przyciskami „Szukaj”/„Wyczyść”, obsługą Enter oraz domyślnym trybem wyszukiwania po nazwie.</li>
+          <li>Faktury (pole GTIN/EAN): Dodano obsługę pola GTIN/EAN dla pobieranych dokumentów i wysyłanych, wartość można dodać z menu kontekstowego edycji pozycji faktury, a obecność wartości jest oznaczana ikonką etykiety w kolumnie index.</li>
+          <li>Faktury (Edycja): Dodano możliwość wiązania pozycji z dokumentów z towarami dla trybu kontroli stanów magazynowych.</li>
+          <li>Stany Magazynowe: Dodano funkcjonalność kontroli stanów magazynowych aktywowanej z poziomu konfiguracji podmiotu. Włączenie funkcjonalności implikuje uruchomienie zliczania stanów magazynowych towarów względem ilości oraz ceny zakupu(magazynowej)</li>
+          <li>Raporty (renament): dodano funkcjonalności w module deklaracje generowania renamentów względem ilości oraz względem ilości z podziałem na ceny zakupu.</li>
+          <li>Towary (Ruchy towarowe):Dodano funkcjonalność sprawdzenia ruchów magazynowych oraz ręcznego definiowania stanów magazynowych w menu kontekstowym modułu kartoteki towarów.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.15" date="2026-03-27">
+      <description>
+        <ul>
+          <li>Faktury (Walidacja zapisu): Uniemożliwiono zapis faktury bez wybranego kontrahenta, bez co najmniej jednej pozycji dokumentu oraz z wartością brutto równą zero. Blokada wartości zerowej nie dotyczy faktur korygujących, które mogą wyzerować dokument pierwotny.</li>
+          <li>KSeF (Kontrola przy zamykaniu programu): Dodano ostrzeżenie przy próbie wyjścia z aplikacji, jeśli w bieżącym dniu istnieją dokumenty sprzedaży niewysłane do KSeF, z możliwością pozostania w programie.</li>
+          <li>KSeF (Faktury zakupu, monitoring): Dodano automatyczne sprawdzanie nowych faktur zakupowych po zalogowaniu, z opcjonalnym trybem cyklicznym, powiadomieniami systemowymi, znacznikiem przy przycisku „Pobierz z KSeF” oraz opcją automatycznego pobierania dokumentów.</li>
+          <li>Faktury (Stabilność wyliczeń pozycji): Usunięto zapętlenie sygnałów w edycji pozycji, które mogło prowadzić do błędu rekurencji podczas przeliczania wartości wierszy i sum dokumentu.</li>
+          <li>Faktury (Ikony GTIN/powiązania): Ujednolicono ikonę informacji na kolumnie SKU oraz doprecyzowano jej widoczność: przy wyłączonych stanach magazynowych oznaczenia są pokazywane wyłącznie dla GTIN.</li>
+          <li>Faktury zakupu (Tryb tylko do odczytu): Dla dokumentów z blokadą edycji dopracowano zapis kartoteki i powiązań: przycisk „Zapisz” jest aktywowany dopiero po zaznaczeniu opcji zapisu do kartoteki; zapis działa również bez modułu stanów magazynowych (bez ruchów stanów).</li>
+          <li>Faktury zakupu (Komunikaty po zapisie): Uproszczono podsumowanie zapisu. W trybie magazynowym komunikat pokazuje liczbę: nowych pozycji, pozycji istniejących w kartotece, dodanych i usuniętych powiązań; poza trybem magazynowym pokazuje liczbę zapisanych nowych pozycji i pozycji istniejących w kartotece.</li>
+          <li>Kartoteka Towary i usługi (UI): Dodano kolumnę ID oraz wyszukiwanie po: ID, Nazwa, SKU, GTIN z automatycznym przewinięciem i zaznaczeniem pierwszego wyniku (domyślnie wyszukiwanie po nazwie).</li>
+          <li>Kartoteka Kontrahenci (UI): Dodano wyszukiwanie po NIP i Nazwa z przyciskami „Szukaj”/„Wyczyść”, obsługą Enter oraz domyślnym trybem wyszukiwania po nazwie.</li>
+          <li>Faktury (pole GTIN/EAN): Dodano obsługę pola GTIN/EAN dla pobieranych dokumentów i wysyłanych, wartość można dodać z menu kontekstowego edycji pozycji faktury, a obecność wartości jest oznaczana ikonką etykiety w kolumnie index.</li>
+          <li>Faktury (Edycja): Dodano możliwość wiązania pozycji z dokumentów z towarami dla trybu kontroli stanów magazynowych.</li>
+          <li>Stany Magazynowe: Dodano funkcjonalność kontroli stanów magazynowych aktywowanej z poziomu konfiguracji podmiotu. Włączenie funkcjonalności implikuje uruchomienie zliczania stanów magazynowych towarów względem ilości oraz ceny zakupu(magazynowej)</li>
+          <li>Raporty (renament): dodano funkcjonalności w module deklaracje generowania renamentów względem ilości oraz względem ilości z podziałem na ceny zakupu.</li>
+          <li>Towary (Ruchy towarowe):Dodano funkcjonalność sprawdzenia ruchów magazynowych oraz ręcznego definiowania stanów magazynowych w menu kontekstowym modułu kartoteki towarów.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.14" date="2026-03-24">
+      <description>
+        <ul>
+          <li>JPK (Słowniki US): Zaktualizowano słownik kodów urzędów skarbowych.</li>
+          <li>KSeF (Faktury zakupu): Dodano pobieranie faktur w paczkach zgodnie z nowym endpointem udostępnionym przez KSeF.</li>
+          <li>Podgląd dokumentów (Języki): Dodano niemiecką wersję podglądu dokumentów. W podglądzie można teraz wybrać wersję: Polski, Angielski lub Niemiecki, wraz z obsługą niemieckiej kwoty słownie i pakietem tłumaczeń szablonów.</li>
+          <li>UI (Czytelność kolorów): Poprawiono kontrast kolorów w wersji Qt dla kolumny „Typ” w rozrachunkach oraz niebieskich oznaczeń w sekcji Konfiguracja → KSeF, aby były czytelne zarówno w jasnym, jak i ciemnym motywie.</li>
+          <li>Rozrachunki (Kolumna Dni): Zmieniono sposób prezentowania dni do terminu: kolor zielony bez znaków +/-, dni po terminie: kolor czerwony z znakiem minus.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.13" date="2026-03-23">
+     <description>
+        <ul>
+          <li>KSeF (Import nowych faktur zakupowych): Uszczelniono mapowanie dat podczas importu, aby `date_sale` zawsze miało bezpieczny fallback na `date_issue` i nie zapisywało domyślnego znacznika czasu importu.</li>
+          <li>UI (Lista faktur, kolumna "R"): Naprawiono logikę statusu rozliczenia dla faktur korygujących. Po domknięciu bilansu korekty znacznik w kolumnie "R" poprawnie przechodzi na stan "rozliczono", także gdy wpłata została zaksięgowana na dokumencie bazowym wątku.</li>
+          <li>UI (Rozrachunki, kolumna "Dni"): Dla w pełni rozliczonych pozycji ukryto wartość liczby dni (+/-). Kolumna „Dni” pokazuje teraz odchylenie od terminu wyłącznie dla pozycji nierozliczonych.</li>
+          <li>Wydruki (Faktury zakupu): Poprawiono formatowanie i układ wydruków faktur zakupowych, dla pól StopkiDokumentu.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.12" date="2026-03-21">
+      <description>
+        <ul>
+          <li>KSeF (Import faktur zakupowych i korekt): Rozszerzono mapowanie płatności z XML o obsługę metod mieszanych (`ZaplataCzesciowa`) i zapis rozbić płatności, z zachowaniem zgodności z logiką faktur sprzedażowych.</li>
+        <li>Build i dystrybucja (Windows/AppImage/Flatpak): Naprawiono pakowanie zasobów tłumaczeń podglądu poprzez dołączenie katalogu `locale` do konfiguracji buildów.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.11" date="2026-03-20">
+      <description>
+        <ul>
+          <li>UI (Lista faktur i Rozrachunki): Uporządkowano działanie statusów płatności dla faktur korygujących. System czytelniej rozróżnia teraz sytuacje: „Do zwrotu”, „Do zapłaty” oraz „Zapłacono”.</li>
+          <li>UI (Podpowiedzi statusu): Rozszerzono opisy statusów niezapłaconych dokumentów, aby szybciej ocenić termin płatności i opóźnienia.</li>
+          <li>KSeF (Walidacja biznesowa): Dodano zabezpieczenie, które blokuje wysyłkę korekty, jeśli faktura pierwotna nie została wcześniej wysłana do KSeF.</li>
+          <li>Kartoteka i pozycje faktury: Dodano obsługę rozróżnienia pozycji jako towar lub usługa, wraz z zachowaniem zgodności dla istniejących danych.</li>
+          <li>Edycja faktury (UX): Rozszerzono formularz o opcjonalne pole „Typ” dla pozycji i dopracowano zachowanie tej opcji w praktycznych scenariuszach pracy.</li>
+          <li>Podgląd i tłumaczenia: Poprawiono spójność podglądu korekt oraz uzupełniono tłumaczenia (EN) w kluczowych miejscach.</li>
+          <li>Stabilność aplikacji: Wprowadzono serię poprawek porządkujących edycję i podgląd faktur oraz usunięto regresję wpływającą na wysyłkę dokumentów do KSeF.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.10" date="2026-03-19">
+      <description>
+        <ul>
+          <li>KSeF (Schemat XML FA 3): Gruntownie przebudowano logikę generowania pliku XML rozliczającego faktury międzynarodowe i transgraniczne:</li>
+          <li>Zaimplementowano prawidłowe mapowanie procedury "odwrotnego obciążenia" i stawki 0% na podstawie kodów krajów (geolokalizacji ISO i przynależności do EU). Zabezpiecza to precyzyjny zrzut kwot netto do autoryzowanych węzłów deklaracji. Tym samym wyeliminowano błąd wrzucania wszystkich faktur walutowych do krajowego tagu.</li>
+          <li>Dodano obsługę opcjonalnego węzła OkresFa wykorzystującego pola P_6_Od oraz P_6_Do. W momencie ustanowienia na fakturze ramowego okresu, XML poprawnie zgłosi przedział, zamiast twardo ustawiać ujednoliconą sztywną datę do tagu P_6.</li>
+          <li>System ERP / Podgląd: Ustabilizowano obsługę prefiksów numerycznych NIP-ów państw dla wizualizacji faktur.</li>
+          <li>KSeF API: Rozwiązano problem przerywania pobierania wielu faktur z KSeF (błąd po ok. 16 sztukach). Wprowadzono automatyczną obsługę limitów zapytań (Rate Limiting) ustawionych przez serwery Ministerstwa Finansów. Aplikacja radzi sobie teraz z błędami "429 Too Many Requests" poprzez mechanizm automatycznego wstrzymywania i wznawiania (retry) zadań oraz mikropauzy (0.5s) pozwalające płynnie zsynchronizować bez limitów setki dokumentów.</li>
+          <li>Wizualizacja faktur: Usunięto zbędny komunikat ostrzegawczy o wykryciu zagranicznego kontrahenta podczas samej edycji utworzonej wcześniej faktury. Ponadto, komunikat ten oraz automatyczne ustawienie flagi "Odwrotne obciążenie" aktywują się teraz wyłącznie dla zagranicznych kontrahentów należących do UE z poprawnie oznaczonym parametrem "Płatnik VAT-UE".</li>
+          <li>Wizualizacja faktur: Zaktualizowano styl wydruku danych bankowych (polski i angielski PDF). Jeżeli wydruk generuje się z kontem firmowym, rachunek prezentowany jest w międzynarodowym formacie IBAN z rozbiciem na spacje wraz z kodem kraju, a kod SWIFT wyświetlany jest z przedrostkiem BIC/SWIFT</li>
+          <li>Dla faktur zagranicznych numer identyfikacji podatkowej własnej firmy (wystawcy) i nabywcy jest teraz zawsze przymusowo formatowany do międzynarodowego standardu przedrostka z kodem państwa (np. wyświetla się PL1234567890 na dokumentach trans-granicznych).</li>
+          <li>Wprowadzono obsługę pola "Okres od-do" (wydruki wszystkich faktur). Jeżeli jako punkt odniesienia podatkowego wskazano dany okres ramowy wykonywania zlecenia, na wydrukach pojawi się specjalna rubryka „Okres od-do” z jego zakresem, a „Data sprzedaży” pokaże datę pomyślnego zamknięcia okresu („do”), ściślej odzwierciedlając ramy rachunkowe na dokumencie eksportu.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.9" date="2026-03-17">
+      <description>
+        <ul>
+          <li>Księgowość (Rozrachunki): Wprowadzono narzędzie do "Rozliczeń Zbiorczych" (kompensat). Pozwala to rozliczać wiele należności (WN) i zobowiązań (MA) z danym kontrahentem naraz na zadeklarowaną łączną kwotę wpłaty. System automatycznie dystrybuuje środki na poczet najstarszych dokumentów i wyświetla obustronne bilanse.</li>
+          <li>KSeF (JPK_FA i JPK_V7M): Zaktualizowano mapowanie tagów dla list faktur i pozycji faktur z odwrotnym obciążeniem (K_11 dla zagranicznych, K_31 dla krajowych). Usługi objęte procedurami GTU_12 i GTU_13 są od teraz rzutowane celnie w K_12 raportu JPK.</li>
+          <li>Waluty i Kursy (NBP): Wprowadzono automatyczne dociąganie na żywo kursu waluty z odpowiednich tabel (Tabela A NBP) dla wybranego dnia sprzedaży na oknie faktury uwzględniające święta i weekendy (skok wstecz).</li>
+          <li>Deklaracje i Raportowanie (Księgowość): Naprawiono rozliczanie faktur walutowych - obecnie ewidencja VAT oraz moduł sumowań deklaracji w JPK prawidłowo aplikują kurs (wskaźnik `currency_rate`) celem przekonwertowania kwot netto/brutto w tabelach z EUR/USD na PLN stosownie do algorytmów Ministerstwa.</li>
+          <li>Księgowość (Rozrachunki): Pod prawym przyciskiem myszy dodano szybki podgląd ("Pokaż wpłaty") umożliwiający wgląd w historię księgowania należności dla danego dokumentu rozrachunkowego z opcją na cofnięcie / usunięcie wpłaty.</li>
+          <li>UI (Lista faktur): Dodano nową kolumnę "R" ze statusem zapłaty (ikona check / ostrzeżenie / X) oraz interaktywnym dymkiem informującym o kwocie pozostałej do zapłaty. Skorelowano to z systemem rozrachunków.</li>
+          <li>UI (Lista faktur): Dodano objaśniające dymki (tooltips) nad przyciskami akcji (Podgląd, Edycja, Wysyłka do KSeF) na liście faktur.</li>
+          <li>Baza Kontrahentów: Umożliwiono dodawanie wielu oddziałów firmy z tym samym numerem NIP, ale różnymi adresami. Zmodyfikowano sprawdzanie duplikatów i usunięto blokadę unikalności NIP-u z bazy danych.</li>
+          <li>Podgląd Faktury: Naprawiono błąd wyświetlania danych na podglądzie, PDF i wydrukach faktur zakupowych pobieranych z KSeF. Jako sprzedawca są teraz prawidłowo ujęte dane kontrahenta (zamiast dotychczasowego "Brak danych" oraz danych nabywcy w nieswoim miejscu).</li>
+          <li>Wysyłka KSEF: Poprawiono moduł wyroczni szyfrowania dla metody autoryzacji w KSeF za pomocą tokenu dostępowego.</li>
+          <li>Podgląd Faktury: Dodano dynamiczne tłumaczenie faktur na język angielski.</li>
+        </ul>
+      </description>
+    </release>
+  <release version="1.0.8" date="2026-03-12">
+      <description>
+        <ul>
+          <li>Poprawiono moduł wyroczni szyfrowania dla metody autoryzacji w KSeF za pomocą tokenu dostępowego</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.7" date="2026-03-05">
+      <description>
+        <ul>
+          <li>System: Dodano obsługę automatycznego wykrywania ciemnego motywu systemu (wsparcie dla Windows oraz Linux/Flatpak - XDG Portal).</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.6" date="2026-03-04">
+      <description>
+        <ul>
+          <li>Kody QR (Offline): Naprawiono błąd "Link nieprawidłowy" w Aplikacji Podatnika KSeF.</li>
+          <li>Zmieniono algorytm podpisu cyfrowego na `RSA-SHA256` z paddingiem `PKCS#1 v1.5` (wymagany przez MF), zamiast PSS.</li>
+          <li>Wprowadzono kanonizację XML (Inclusive C14N) przed wyliczeniem skrótu SHA-256 dla kodu QR, co zapewnia zgodność sumy kontrolnej.</li>
+          <li>Naprawiono format daty w linku QR (standard ISO 8601).</li>
+          <li>Logika Wysyłki (Online): Zoptymalizowano proces wysyłki faktur.</li>
+          <li>Aplikacja teraz wysyła do KSeF dokładnie ten sam "snapshot" XML, który został użyty do wygenerowania podglądu i kodu QR.</li>
+          <li>Eliminuje to rozbieżności w sumach kontrolnych (Hash) pomiędzy kodem QR a plikiem w KSeF.</li>
+          <li>UI: Usunięto nadmiarowe (podwójne) okno potwierdzenia wysyłki w widoku listy faktur.</li>
+          <li>UI (Edycja Faktury): przeniesiono sekcję "Warunki Transakcji" (Zamówienie / Umowa) do zakładki "KSeF / Opcje".</li>
+          <li>UI (Lista faktur): Dodano możliwość zmiany szerokości kolumn oraz dodano kolumne z przyciskami akcji dla list faktur</li>
+          <li>Logika: naprawiono błąd wyświetlania pustych dat zamówienia/umowy na podglądzie faktury, gdy opcja była odznaczona.</li>
+          <li>Logika: zoptymalizowano działanie opcji "Odwrotne obciążenie" (VAT). Po usunięciu wszystkich pozycji ze stawką "oo" opcja odznacza się automatycznie, przywracając możliwość edycji innych stawek.</li>
+          <li>Naprawy: usunięto błędy (TypeError) związane z inicjalizacją okna dialogowego faktury i duplikacją metod.</li>
+          <li>Konfiguracja (certyfikat linku): dodano przycisk testu hasła do pliku klucza.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.5-2" date="2026-03-02">
+      <description>
+        <p>Fix: Updated directory structure and permissions for better Flatpak compliance.</p>
+      </description>
+    </release>
+    <release version="1.0.5-1" date="2026-03-02" />
+    <release version="1.0.5" date="2026-02-28" />
+    <release version="1.0.4" date="2026-02-27" />
+    <release version="1.0.3" date="2026-02-25" />
+    <release version="1.0.2" date="2026-02-15" />
+  </releases>
+</component>
